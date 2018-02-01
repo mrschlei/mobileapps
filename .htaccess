@@ -1,0 +1,333 @@
+#
+# Apache/PHP/Drupal settings:
+#
+#CosignProtected Off
+# Protect files and directories from prying eyes.
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\..*|Entries.*|Repository|Root|Tag|Template|composer\.(json|lock))$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
+  Order allow,deny
+</FilesMatch>
+
+# Don't show directory listings for URLs which map to a directory.
+#COMMENTED OUT, PER https://knowledgebase.umich.edu/ITS_virtual_hosting_drupals
+#Options -Indexes
+IndexIgnore *
+# Follow symbolic links in this directory.
+#COMMENTED OUT, PER https://knowledgebase.umich.edu/ITS_virtual_hosting_drupals
+#Options +FollowSymLinks
+
+# Make Drupal handle any 404 errors.
+ErrorDocument 404 /index.php
+
+# Set the default handler.
+DirectoryIndex index.php index.html index.htm
+
+# Override PHP settings that cannot be changed at runtime. See
+# sites/default/default.settings.php and drupal_initialize_variables() in
+# includes/bootstrap.inc for settings that can be changed at runtime.
+
+# PHP 5, Apache 1 and 2.
+#COMMENTED OUT, PER https://knowledgebase.umich.edu/ITS_virtual_hosting_drupals
+#<IfModule mod_php5.c>
+#  php_flag magic_quotes_gpc                 off
+#  php_flag magic_quotes_sybase              off
+#  php_flag register_globals                 off
+#  php_flag session.auto_start               off
+#  php_value mbstring.http_input             pass
+#  php_value mbstring.http_output            pass
+#  php_flag mbstring.encoding_translation    off
+#</IfModule>
+
+# Requires mod_expires to be enabled.
+#schleif note - this block appears to cause the ERR_TOO_MANY_REDIRECTS problems, so I'm commenting it the hell out
+#<IfModule mod_expires.c>
+  # Enable expirations.
+  # ExpiresActive On
+
+  # Cache all files for 2 weeks after access (A).
+  # ExpiresDefault A1209600
+
+  #<FilesMatch \.php$>
+    # Do not allow PHP scripts to be cached unless they explicitly send cache
+    # headers themselves. Otherwise all scripts would have to overwrite the
+    # headers set by mod_expires if they want another caching behavior. This may
+    # fail if an error occurs early in the bootstrap process, and it may cause
+    # problems if a non-Drupal PHP file is installed in a subdirectory.
+    # ExpiresActive Off
+  #</FilesMatch>
+#</IfModule>
+
+#added so human-created folders bounce back to Drupal 
+ RewriteCond %{REQUEST_URI} ^/login/?$ 
+ RewriteRule ^ /index.php [L]
+
+# Various rewrite rules.
+#COMMENTED OUT, PER https://knowledgebase.umich.edu/ITS_virtual_hosting_drupals
+#<IfModule mod_rewrite.c>
+  RewriteEngine on
+  
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} projects/servicelink/training-resources 
+RewriteRule ^(.*)$ https://it.umich.edu/projects/servicelink/training-resources [R=301,L]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} projects/servicelink/its 
+RewriteRule ^(.*)$ https://it.umich.edu/projects/servicelink/its [R=301,L]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} projects/servicelink/ast 
+RewriteRule ^(.*)$ https://it.umich.edu/projects/servicelink/ast [R=301,L]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} projects/servicelink/lsa 
+RewriteRule ^(.*)$ https://it.umich.edu/projects/servicelink/lsa [R=301,L]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} projects/iiam
+RewriteRule ^(.*)$ http://www.cio.umich.edu/eiam-program [R=301,L]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} projects/iam
+RewriteRule ^(.*)$ http://www.cio.umich.edu/eiam-program [R=301,L]
+
+#all /projects/iiam traffic should redirect to /projects/iam
+RewriteCond %{REQUEST_URI} projects/iiam
+RewriteRule ^(.*)$ http://www.cio.umich.edu/eiam-program [R=301,L]
+
+#all /projects/iiam traffic should redirect to /projects/iam 
+#ADDED 5/1/2017 per INC1035838
+RewriteCond %{REQUEST_URI} projects/iam
+RewriteRule ^(.*)$ http://www.cio.umich.edu/eiam-program [R=301,L]
+
+
+#redirect all /m/ traffic not from mobileapps to the root folder
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/m/
+RewriteRule ^(.*)$ / [R=301,L]
+
+#mobileapps /apps->um-apps move
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/apps
+RewriteRule ^(.*)$ /um-apps [R=301,L]
+
+#####many, many redirects - mobile apps center redo go-live - 11/20/2014
+#RewriteCond %{HTTP_HOST} ^mobileapps
+#RewriteCond %{REQUEST_URI} ^/michigan-app
+#RewriteRule ^(.*)$ /um-apps [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/node/47
+RewriteRule ^(.*)$ http://www.itcs.umich.edu/computers/mobile/index.php [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/node/48
+RewriteRule ^(.*)$ http://www.itcs.umich.edu/computers/mobile/index.php [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/node/54
+RewriteRule ^(.*)$ http://www.itcs.umich.edu/computers/mobile/index.php [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/node/55
+RewriteRule ^(.*)$ http://www.itcs.umich.edu/computers/mobile/index.php [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/node/56
+RewriteRule ^(.*)$ http://www.itcs.umich.edu/computers/mobile/index.php [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/forum
+RewriteRule ^(.*)$ / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/using-your-device
+RewriteRule ^(.*)$ http://www.itcs.umich.edu/computers/mobile/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobileapps
+RewriteCond %{REQUEST_URI} ^/devtoolkit/mobile-apps-challenge
+RewriteRule ^(.*)$ http://its.umich.edu/mobile-challenge/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^services
+RewriteCond %{REQUEST_URI} ^/service-lifecyle-status-explained
+RewriteRule ^(.*)$ /service-lifecycle-status-explained [R=301,L]
+#####end many, many redirects
+
+
+#make it so that /knowledgebase traffic redirects to mobileapps.umich.edu/knowledgebase
+RewriteCond %{HTTP_HOST} !^mobileapps
+RewriteCond %{REQUEST_URI} ^/knowledgebase/
+RewriteRule ^knowledgebase/(.*)$ http://mobileapps.umich.edu/knowledgebase/$1 [R=301,NC,L]
+
+
+#make it so that services.it.umich.edu/my-it-services redirects 
+#to http://umichprod.service-now.com/my-it-services
+RewriteCond %{HTTP_HOST} !^services.it
+RewriteCond %{REQUEST_URI} ^/my-it-services
+RewriteRule ^(.*)$ http://umichprod.service-now.com/my-it-services [R=301,NC,L]
+
+
+#make it so that services.it.umich.edu/m-amazon-web-services redirects 
+#to http://services.it.umich.edu/m-cloud
+RewriteCond %{HTTP_HOST} !^services.it
+RewriteCond %{REQUEST_URI} ^/m-amazon-web-services
+RewriteRule ^(.*)$ http://services.it.umich.edu/m-cloud [R=301,NC,L]
+
+
+#make it so that sservices.it.umich.edu/mamazon-web-services redirects 
+#to http://services.it.umich.edu/m-cloud
+RewriteCond %{HTTP_HOST} !^services.it
+RewriteCond %{REQUEST_URI} ^/mamazon-web-services
+RewriteRule ^(.*)$ http://services.it.umich.edu/m-cloud [R=301,NC,L]
+
+
+#make it so that services.it.umich.edu/hosting-services
+#to hosting-website-services
+RewriteCond %{HTTP_HOST} !^services
+RewriteCond %{REQUEST_URI} ^/hosting-services/
+RewriteRule ^(.*)$ http://services.it.umich.edu/hosting-website-services [R=301,L]
+
+
+
+#make it so that services.it.umich.edu/dashboard 
+#to http://umichprod.service-now.com/my-it-services
+RewriteCond %{HTTP_HOST} !^services.it
+RewriteCond %{REQUEST_URI} ^/dashboard
+RewriteRule ^(.*)$ http://umichprod.service-now.com/my-it-services [R=301,NC,L]
+
+
+
+  # Block access to "hidden" directories whose names begin with a period. This
+  # includes directories used by version control systems such as Subversion or
+  # Git to store control files. Files whose names begin with a period, as well
+  # as the control files used by CVS, are protected by the FilesMatch directive
+  # above.
+  #
+  # NOTE: This only works when mod_rewrite is loaded. Without mod_rewrite, it is
+  # not possible to block access to entire directories from .htaccess, because
+  # <DirectoryMatch> is not allowed here.
+  #
+  # If you do not have mod_rewrite installed, you should remove these
+  # directories from your webroot or otherwise protect them from being
+  # downloaded.
+  RewriteRule "(^|/)\." - [F]
+  
+  # added on 4/10/2013 to redirect /miserver to /node/36 on the services portal
+  RewriteRule ^miserver/$ node/36
+  Redirect 301 /midatabase/transition http://its.umich.edu/enterprise/data-database
+  Redirect 301 /miserver/transition http://its.umich.edu/enterprise/data-database
+  
+
+  # If your site can be accessed both with and without the 'www.' prefix, you
+  # can use one of the following settings to redirect users to your preferred
+  # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
+  #
+  # To redirect all users to access the site WITH the 'www.' prefix,
+  # (http://example.com/... will be redirected to http://www.example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  #
+  # To redirect all users to access the site WITHOUT the 'www.' prefix,
+  # (http://www.example.com/... will be redirected to http://example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  # RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+
+  # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
+  # VirtualDocumentRoot and the rewrite rules are not working properly.
+  # For example if your site is at http://example.com/drupal uncomment and
+  # modify the following line:
+  # RewriteBase /drupal
+  #
+  # If your site is running in a VirtualDocumentRoot at http://example.com/,
+  # uncomment the following line:
+  # RewriteBase /
+
+  # Pass all requests not referring directly to files in the filesystem to
+  # index.php. Clean URLs are handled in drupal_environment_initialize().
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^ index.php [L]
+
+  # Rules to correctly serve gzip compressed CSS and JS files.
+  # Requires both mod_rewrite and mod_headers to be enabled.
+  <IfModule mod_headers.c>
+    # Disable content sniffing, since it's an attack vector.
+    Header always set X-Content-Type-Options nosniff
+    # Disable Proxy header, since it's an attack vector.
+    RequestHeader unset Proxy  
+	
+    # Serve gzip compressed CSS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+
+
+  RewriteCond %{REQUEST_URI} !cosign/valid
+  RewriteRule ^ index.php [L]
+
+    # Serve gzip compressed JS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+
+    # Serve correct content types, and prevent mod_deflate double gzip.
+    RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
+    RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1]
+
+    <FilesMatch "(\.js\.gz|\.css\.gz)$">
+      # Serve correct encoding type.
+      Header set Content-Encoding gzip
+      # Force proxies to cache gzipped & non-gzipped css/js files separately.
+      Header append Vary Accept-Encoding
+    </FilesMatch>
+  </IfModule>
+#COMMENTED OUT, PER https://knowledgebase.umich.edu/ITS_virtual_hosting_drupals
+#</IfModule>
+
+Redirect 301 /dataguide/admin/content https://www.safecomputing.umich.edu/dataguide/?q=admin/content
+Redirect 301 /itsecurityconsulting /it-security-consulting
+Redirect 301 /ethicalhacking /it-security-ethical-hacking
+Redirect 301 /itsecuritydrbc /it-security-drbc-planning
+Redirect 301 /vulnerabilityscan /it-security-essential
+
+Redirect 301 /challenge /devtoolkit/mobile-apps-challenge
+
+#for services.it search results:
+Redirect 301 /search/node/mbox /search/node/m%2Bbox
+Redirect 301 /search/node/mcloud /search/node/m%20cloud
+Redirect 301 /search/node/aws /search/node/%28aws%29
+Redirect 301 /search/node/AWS /search/node/%28AWS%29
+
+Redirect 301 /sites/documentation.its.umich.edu/files/screenshots/ifs/r1467/Printing_RequestingAccount.pdf /node/488
+Redirect 301 /sites/documentation.its.umich.edu/files/screenshots/ifs/r1469/quickStartWin.html /node/376
+Redirect 301 /sites/documentation.its.umich.edu/files/screenshots/ifs/r1469/Administration.html /node/377
+Redirect 301 /sites/documentation.its.umich.edu/files/screenshots/ifs/r1469/quickStartIAAS.html /node/375
+Redirect 301 /node/285/help.html /node/378
+Redirect 301 /node/285/quickStartWin.html /node/376
+Redirect 301 /node/285/Administration.html /node/377
+Redirect 301 /node/285/quickStartIAAS.html /node/375
+Redirect 301 /sites/documentation.its.umich.edu/files/screenshots/ifs/r1467/backup.html http://documentation.its.umich.edu/node/346
+Redirect 301 /sites/documentation.its.umich.edu/files/screenshots/ifs/r1467/storage.html http://its.umich.edu/computing/backup-storage
+
+
+#redirect only /sites/it.umich.edu/files/, but not the files therein
+RedirectMatch ^/sites/it.umich.edu/files/$ /
+RedirectMatch ^/sites/it.umich.edu/files$ /
+
+#per https://www.drupal.org/SA-CORE-2014-004 - killing access to xmlrpc.php
+Redirect 301 /xmlrpc.php /
+
+#INC0956044 - Redirecting Infrastructure Services
+Redirect 301 /backbone http://its.umich.edu/enterprise/wifi-networks/core-network
+Redirect 301 /blue-jeans http://its.umich.edu/communication/videoconferencing/blue-jeans
+Redirect 301 /contact-center http://its.umich.edu/communication/telephone/contact-centers
+Redirect 301 /data-centers http://its.umich.edu/enterprise/data-centers
+Redirect 301 /internet http://its.umich.edu/enterprise/wifi-networks/campus-network-diagram-description
+Redirect 301 /standard-ethernet http://its.umich.edu/enterprise/wifi-networks/inbuilding-networks
+#Redirect 301 /television http://its.umich.edu/communication/television-video
+Redirect 301 /video-streaming http://its.umich.edu/communication/television-video/live-event-streaming
+Redirect 301 /live-event-streaming http://its.umich.edu/communication/television-video/live-event-streaming
+Redirect 301 /voice-services http://its.umich.edu/communication/telephone
+Redirect 301 /voip http://its.umich.edu/communication/telephone
+Redirect 301 /wi-fi http://its.umich.edu/enterprise/wifi-networks/wifi
