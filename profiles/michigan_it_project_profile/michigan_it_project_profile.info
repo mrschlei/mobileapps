@@ -1,0 +1,223 @@
+; Packaging information for michigan_it_project_profile
+name = "Michigan IT Project Profile"
+description = "Connecting the community of technology expertise and resources across campus"
+core = "7.x"
+; ----------
+; Variables
+; ----------
+variables[additional_settings__active_tab_page] = 'edit-workflow'
+variables[additional_settings__active_tab_service_offering] = 'edit-menu'
+variables[admin_theme] = 'seven'
+variables[aggregator_allowed_html_tags] = '<a> <b> <br> <em> <i> <li> <ol> <p> <strong> <u> <ul>'
+variables[aggregator_category_selector] = 'checkboxes'
+variables[aggregator_clear] = '9676800'
+variables[aggregator_summary_items] = '5'
+variables[aggregator_teaser_length] = '600'
+variables[block_titlelink_aggregator_feed-1][url] = 'http://status.its.umich.edu/'
+variables[block_titlelink_aggregator_feed-1][display] = 1
+variables[block_titlelink_aggregator_feed-1][title] = ''
+variables[captcha_add_captcha_description] = 1
+variables[captcha_default_challenge] = 'captcha/Math'
+variables[captcha_default_validation] = '1'
+variables[captcha_description] = 'This question is for testing whether you are a human visitor and to prevent automated spam submissions.'
+variables[captcha_persistence] = '1'
+variables[captcha_wrong_response_counter] = 956
+variables[comment_default_mode_page] = 1
+variables[comment_default_mode_service_offering] = 1
+variables[comment_default_per_page_page] = '50'
+variables[comment_default_per_page_service_offering] = '50'
+variables[comment_form_location_page] = 1
+variables[comment_form_location_service_offering] = 1
+variables[comment_page] = '0'
+variables[comment_preview_page] = '0'
+variables[comment_preview_service_offering] = '1'
+variables[comment_service_offering] = '1'
+variables[comment_subject_field_page] = 1
+variables[comment_subject_field_service_offering] = 1
+variables[cosign_auth_cron_last_change] = '2013-06-20 14:20:29'
+variables[cosign_auth_cron_last_id] = 97
+variables[cron_safe_threshold] = '10800'
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'America/New_York'
+variables[date_first_day] = '0'
+variables[default_field_group][group_overview|node|service_offering|form] = true
+variables[default_field_group][group_so_tabs|node|service_offering|form] = true
+variables[default_field_group][group_so_tabs|node|service_offering|default] = false
+variables[default_field_group][group_overviewtab|node|service_offering|default] = false
+variables[default_field_group][group_serviceexpectationtab|node|service_offering|default] = false
+variables[default_field_group][group_gettignstartedtab|node|service_offering|default] = false
+variables[default_field_group][group_resourcestab|node|service_offering|default] = false
+variables[default_nodes_main] = '10'
+variables[field_bundle_settings][node][service_offering][view_modes][teaser] = array (
+  'custom_settings' => true,
+)
+variables[field_bundle_settings][node][service_offering][view_modes][full] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][service_offering][view_modes][rss] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][service_offering][view_modes][search_index] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][service_offering][view_modes][search_result] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][service_offering][view_modes][token] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][service_offering][extra_fields][form] = array (
+  'title' => 
+  array (
+    'weight' => '0',
+  ),
+  'path' => 
+  array (
+    'weight' => '1',
+  ),
+)
+variables[field_bundle_settings][node][service_offering][extra_fields][display] = array (
+)
+variables[field_bundle_settings][node][page][view_modes][full] = array (
+  'custom_settings' => true,
+)
+variables[field_bundle_settings][node][page][view_modes][teaser] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][page][view_modes][rss] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][page][view_modes][search_index] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][page][view_modes][search_result] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][page][view_modes][token] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][node][page][extra_fields][form] = array (
+)
+variables[field_bundle_settings][node][page][extra_fields][display] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_so_resources][view_modes][full] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][field_collection_item][field_so_resources][view_modes][token] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][field_collection_item][field_so_resources][extra_fields][form] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_so_resources][extra_fields][display] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_collection_getting_started][view_modes][full] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][field_collection_item][field_collection_getting_started][view_modes][token] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][field_collection_item][field_collection_getting_started][extra_fields][form] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_collection_getting_started][extra_fields][display] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_service_expectations][extra_fields][form] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_service_expectations][extra_fields][display] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_overview][view_modes][full] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][field_collection_item][field_overview][view_modes][token] = array (
+  'custom_settings' => false,
+)
+variables[field_bundle_settings][field_collection_item][field_overview][extra_fields][form] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_overview][extra_fields][display] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_internal_data][extra_fields][form] = array (
+)
+variables[field_bundle_settings][field_collection_item][field_internal_data][extra_fields][display] = array (
+)
+variables[filter_fallback_format] = 'plain_text'
+variables[image_toolkit] = 'gd'
+variables[maintenance_mode_message] = '<p>Site Temporarily Unavailable</p>
+
+<p>The Michigan IT Services portal is currently unavailable. This message will be removed when the site is available again. Thank you for your<br />patience.</p>
+
+<p>If you have an immediate need, please contact the ITS Service Center: <a href="http://its.umich.edu/help/">http://its.umich.edu/help/</a></p>
+
+<p>734-764-HELP<br />
+(764-4357)<br />
+Submit Online Help Request: <a href="https://servicerequest.umich.edu">https://servicerequest.umich.edu</a><br />
+IT Documentation: <a href="http://www.itcs.umich.edu/itcsdocs/">http://www.itcs.umich.edu/itcsdocs/</a></p>
+<p>&nbsp;</p>'
+variables[maxlength_js_label_service_offering] = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+variables[menu_expanded][0] = 'main-menu'
+variables[menu_options_page][0] = 'main-menu'
+variables[menu_options_service_offering][0] = 'main-menu'
+variables[menu_parent_page] = 'main-menu:0'
+variables[menu_parent_service_offering] = 'main-menu:0'
+variables[minimum_word_size] = '3'
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[node_options_page][1] = 'revision'
+variables[node_preview_page] = '1'
+variables[node_preview_service_offering] = '1'
+variables[node_rank_comments] = '0'
+variables[node_rank_promote] = '0'
+variables[node_rank_recent] = '0'
+variables[node_rank_relevance] = '0'
+variables[node_rank_sticky] = '0'
+variables[overlap_cjk] = 1
+variables[page_manager_override_anyway] = true
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = '[node:title]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[path_alias_whitelist][node] = true
+variables[path_alias_whitelist][user] = true
+variables[revisioning_edit_callback] = '0'
+variables[revisioning_require_update_to_publish] = 1
+variables[revisioning_view_callback] = '0'
+variables[save_continue_service_offering] = 'Save and add fields'
+variables[search_active_modules][cosign_auth] = 'cosign_auth'
+variables[search_active_modules][node] = 'node'
+variables[search_active_modules][advanced_help] = 0
+variables[search_active_modules][user] = 0
+variables[search_cron_limit] = '200'
+variables[search_default_module] = 'node'
+variables[search_log_cron] = '0'
+variables[search_log_modules_enabled][cosign_auth] = 'cosign_auth'
+variables[search_log_modules_enabled][node] = 'node'
+variables[search_log_modules_enabled][advanced_help] = 0
+variables[search_log_modules_enabled][user] = 0
+variables[search_log_preprocess] = 1
+variables[search_log_terms] = '0'
+variables[site_frontpage] = 'front-page'
+variables[statistics_day_timestamp] = 1371741260
+variables[superfish_delay_1] = '800'
+variables[superfish_depth_1] = '-1'
+variables[superfish_hid_1] = 1
+variables[superfish_maxwidth_1] = '27'
+variables[superfish_mcdepth_1] = '1'
+variables[superfish_mclevels_1] = '1'
+variables[superfish_menu_1] = 'main-menu:0'
+variables[superfish_minwidth_1] = '12'
+variables[superfish_name_1] = 'Main menu (superfish)'
+variables[superfish_pathclass_1] = 'active-trail'
+variables[superfish_pathlevels_1] = '1'
+variables[superfish_slide_1] = 'none'
+variables[superfish_speed_1] = 'fast'
+variables[superfish_style_1] = 'white'
+variables[superfish_supersubs_1] = 1
+variables[superfish_type_1] = 'horizontal'
+variables[theme_default] = 'zen_services'
+variables[user_default_timezone] = '0'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+

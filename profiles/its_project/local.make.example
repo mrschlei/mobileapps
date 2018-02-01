@@ -1,0 +1,17 @@
+; its_project make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ Libraries +++++
+
+; its_project
+libraries[its_project][directory_name] = "its_project"
+libraries[its_project][type] = "profile"
+libraries[its_project][destination] = "../../profiles"
+libraries[its_project][download][type] = "get"
+libraries[its_project][download][url] = "http://ftp.drupal.org/files/projects/its_project-7.x-1.x-dev.tar.gz"
+

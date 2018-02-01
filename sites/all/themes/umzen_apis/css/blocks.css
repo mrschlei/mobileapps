@@ -1,0 +1,235 @@
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block /* Block wrapper */ {
+/*  margin-bottom: 1.5em;*/
+}
+
+.block.first /* The first block in the region */ {
+}
+
+.block.last /* The last block in the region */ {
+}
+
+.block.odd /* Zebra striping for each block in the region */ {
+}
+
+.block.even /* Zebra striping for each block in the region */ {
+}
+
+h2.block-title /* Block title */ {
+	
+}
+
+.region-sidebar-second .block /* Block's content wrapper */ {
+	padding:12px 12px 0px 12px!important;
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First block created with "Add block" link */ {
+}
+
+#block-blog-recent /* "Recent blog posts" block */ {
+}
+
+#block-book-navigation /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comment-recent /* "Recent comments" block */ {
+}
+
+#block-forum-active /* "Active forum topics" block */ {
+}
+
+#block-forum-new /* "New forum topics" block */ {
+}
+
+#block-locale-language /* Language switcher block */ {
+}
+
+#block-menu-menu-NAME /* Custom menu block  */ {
+}
+
+#block-node-recent /* "Recent content" block */ {
+}
+
+#block-node-syndicate /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */ {
+}
+
+#block-poll-recent /* "Most recent poll" block */ {
+}
+
+#block-profile-author-information /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-form /* "Search form" block */ {
+}
+
+#block-shortcut-shortcuts /* "Shortcuts" block */ {
+}
+
+#block-statistics-popular /* "Popular content" block */ {
+}
+
+#block-system-main-menu /* "Main menu" block */ {
+}
+
+#block-system-management /* "Management" block for Drupal management menu */ {
+}
+
+#block-system-navigation /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-system-user-menu /* "User menu" block for Drupal user menu */ {
+}
+
+#block-system-help /* "System help" block */ {
+}
+
+#block-system-main /* "Main page content" block */ {
+}
+
+#block-system-powered-by /* "Powered by Drupal" block */ {
+}
+
+#block-user-login /* "User login form" block */ {
+}
+
+#block-user-new /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-online /* "Who's online" block for a list of the online users */ {
+}
+
+/* footer block styles added by mrschlei (stolen from doughb) 4/11/12 */
+.region-footer {
+margin:0;padding:0;
+}
+
+#container {
+text-align: left;
+}
+
+.UMWordmark {
+float: right;
+}
+
+#outerFooter {
+	clear: both;
+	/*background: #CCC;*/
+	border-top:2px solid #d7d7d7;
+	margin: 1.5em 10px 0 10px;
+	padding: 0;
+	display: block;
+}
+
+#innerFooter {
+	background:#ffffff;
+	padding:10px 20px 10px 20px;
+	font-size: 12px;
+	line-height: 30px;
+	display: block;
+}
+
+#innerFooter a:active {
+text-decoration: underline;
+color: #963;
+}
+#innerFooter a:hover {
+text-decoration: underline;
+color: #C30;
+}
+#innerFooter a:link, #innerFooter a:visited {
+text-decoration: none;
+color: #369;
+}
+#innerFooter a:link, #innerFooter a:visited {
+text-decoration: none;
+color: #369;
+}
+#innerFooter a {
+white-space: nowrap;
+}
+
+/*end footer code*/
+
+
+#homeFeatures .icon {
+	float:left;
+	padding:0 10px 10px 0;
+}
+
+#homeFeatures p {
+	margin: 1.33em 0;
+	*margin: 1.15em 0;
+	padding: 0;
+}
+#homeFeatures .app {
+/*	background:#ffffff url("images/feature-top.png") no-repeat;*/
+	padding:0 0 0 42px;
+}
+#homeFeatures ul {
+	margin:0 0 1.33em 10px;
+	padding:0 0 0 10px;
+}
+#homeFeatures .get {
+/*	background:#ffffff url("images/feature-base.png") bottom no-repeat;*/
+	padding:0 0 0 42px;
+}
+#homeFeatures .get a:link, #homeFeatures .get a:visited {
+	font-weight:bold;
+/*	color:#cc3300;*/
+	color:#336699;
+	text-decoration:none;
+}
+#homeFeatures .get a:hover, #homeFeatures .get a:active {
+	color:#cc9933;
+	text-decoration:underline;
+}
+/*end pilfered footer styles*/
+.block-title a {color: #C30;text-decoration:none;}
+
+.block-title a:hover {color: #C30;text-decoration:underline;}
+
+.region-highlighted {margin-left:10px;}
+
+.region-sidebar-second h2 {/*color:#C93;*/color:#000;font-size:120%;}
+
+#outerBlock {background: #CCC;
+margin: 0px 20px 12px 10px !important;}
+
+.region-sidebar-second #outerFooter {margin-bottom:20px;}
+.region-sidebar-second .block {border:1px solid #dcdcdc;border-radius:3px;
+
+padding:5px 5px 5px 5px;background-color:#fafaf9;margin:0px 12px 24px 0;
+
+}
+.region-sidebar-second .view {margin-top:0;padding-top:0;}
+.block-search {
+	float:right;
+	margin:8px 0 0 0;
+}
+
+/*Styles for the <front> Featured Apps block*/
+
+.innerBox {
+	padding:5px; /* 1px min padding */
+	text-align:left;
+}
+
+.innerBox p {	font-size:.9em}
+/*end Featured Apps block styles*/
+
+/*minor styling for Blocks made by Views using a Grid layout*/
+
+.views-view-grid .views-label {
+	font-weight:bold;padding-top:0;margin-top:0;
+}

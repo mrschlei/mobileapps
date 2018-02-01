@@ -1,0 +1,7 @@
+/* CSS Document */
+
+/*change body color*/
+	body {background-color:#d0d8e0;}
+
+/*remove margin from nav div*/
+	#navigation {margin-bottom:0px;}

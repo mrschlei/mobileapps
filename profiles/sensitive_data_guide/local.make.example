@@ -1,0 +1,16 @@
+; sensitive_data_guide make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ TODO modules without versions +++++
+
+projects[cosign_auth][version] = "" ; TODO add version
+projects[cosign_auth][subdir] = "custom"
+
+projects[dataguide_hooks][version] = "" ; TODO add version
+projects[dataguide_hooks][subdir] = "custom"
+

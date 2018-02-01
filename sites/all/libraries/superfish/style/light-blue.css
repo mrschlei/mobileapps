@@ -1,0 +1,131 @@
+.sf-menu.sf-style-light-blue {
+	margin:0;
+	padding:0;
+}
+.sf-menu.sf-style-light-blue.sf-navbar {
+}
+.sf-menu.sf-style-light-blue ul {
+}
+.sf-menu.sf-style-light-blue li {
+	margin:0;
+	padding:0 1px 0 0;
+	background:#ffffff url('/sites/all/themes/zen_services/images/menu-vertical.png') right top no-repeat;
+}
+.sf-menu.sf-style-light-blue a {
+	margin:0;
+	padding:10px;
+	text-decoration:none;
+	line-height:20px;
+	color:#333333;
+}
+.sf-menu.sf-style-light-blue a.sf-with-ul {
+}
+.sf-menu.sf-style-light-blue.rtl a.sf-with-ul {
+}
+.sf-menu.sf-style-light-blue.sf-navbar a {
+}
+.sf-menu.sf-style-light-blue span.sf-description {
+}
+.sf-menu.sf-style-light-blue li li {
+	margin:0;
+	padding:0;
+	border:0;
+	background:#ebebeb;
+	background-image:none;
+}
+.sf-menu.sf-style-light-blue li li li {
+}
+.sf-menu.sf-style-light-blue li:hover,
+.sf-menu.sf-style-light-blue li.sfHover,
+.sf-menu.sf-style-light-blue li.active a,
+.sf-menu.sf-style-light-blue a:focus,
+.sf-menu.sf-style-light-blue a:hover,
+.sf-menu.sf-style-light-blue a:active,
+.sf-menu.sf-style-light-blue.sf-navbar li li {
+	color:#333333;
+}
+.sf-depth-1 {
+}
+.sf-depth-2 a:hover {
+}
+.sf-menu.sf-style-light-blue.sf-navbar li ul {
+}
+.sf-menu.sf-style-light-blue.sf-navbar li ul li ul {
+}
+.sf-menu.sf-style-light-blue .sf-sub-indicator {
+}
+.sf-menu.sf-style-light-blue.rtl .sf-sub-indicator {
+}
+
+/* new styles added by mrschlei 4/25/12 */
+.sf-depth-2 {
+}
+.sf-sub-indicator {
+}
+.sf-menu li {
+}
+.sf-depth-1 {
+}
+/* decreases the gap between the parent menu item and then drop-down UL */
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	margin:0;
+	background:#ebebeb url('/sites/all/themes/zen_services/images/menu-vertical.png') right top no-repeat;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	
+	background:#ebebeb;
+}
+
+/*all blocks get some bottom padding... except for one renegade block. SUPERFIIIIIIIIIISH!!!!!*/
+.block.block-superfish {
+	margin-bottom:0 !important; /* DO NOT REMOVE */
+}
+li.sf-depth-1 ul {
+	margin:0;
+	padding:0;
+}
+li.sf-depth-1 ul li {
+	margin:0 !important;
+/*	border-bottom:1px solid #cccccc;*/
+}
+li.sf-depth-1 ul li {
+	margin:0 !important;
+	padding:0 !important;
+}
+li.sf-depth-1 ul li a {
+/*	padding-top:5px !important;*/
+/*	padding-bottom:5px !important;*/
+	display:block;
+	margin:0 !important;
+	padding:2px 10px 2px 10px !important;
+}
+li.sf-depth-1 ul li:hover,
+li.sf-depth-1 ul li a:hover {
+	background:#cccccc;
+}
+a:visited.sf-depth-1 {
+}
+li.sf-depth-1 a {
+}
+li.sf-depth-1 ul li.last a {
+}
+li.sf-depth-1 ul li.last a:hover {
+}
+
+/*if sueprfish is used in the first sidebar instead of the top nav, kill the right grey border line*/
+.region-sidebar-first .sf-menu.sf-style-light-blue li {background:#fff;}
+.region-sidebar-first .sf-menu.sf-style-light-blue li:hover {
+	background:#ebebeb !important;
+}
+.region-sidebar-first .sf-menu.sf-style-light-blue li li {background:#ebebeb;}
+
+.region-sidebar-first .sf-menu {padding-top:8px;}
+.region-sidebar-first .sf-menu.sf-style-light-blue a {padding:6px 0 6px 6px;}
+
+/*width is set to 12em above... that's a bit much for us*/
+.region-sidebar-first .sf-vertical, .region-sidebar-first .sf-vertical li {width:140px;}
+
+/*let people know things have children*/
+.region-sidebar-first .menuparent {background-image:url('../images/arrow-right.png');background-repeat:no-repeat;background-position:95% 50%;}

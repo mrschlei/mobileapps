@@ -1,0 +1,735 @@
+
+@font-face {
+	font-family:'Antonio';
+	font-style:normal;
+	font-weight:normal;
+	src:url(/webfonts/antonio-regular-webfont.eot);
+	src:url(/webfonts/antonio-regular-webfont.eot?) format('eot'),url(/webfonts/antonio-regular-webfont.woff) format('woff');
+}
+
+body {
+	margin:0;
+	background:#e4e1df;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:.8em;
+	color:#333333;
+	line-height:150%;
+}
+
+#page-banner {
+/*	background:#00274c url('mobile-apps-challenge-page-banner.jpg') center top no-repeat;*/
+	background:#00274c;
+}
+#page-banner-inner {
+	width:880px;
+	margin:0 auto 0 auto;
+	padding:2em 20px 2em 20px;
+
+	background: #6189b7; /* Old browsers */
+	background: -moz-linear-gradient(top, #6189b7 0%, #133b68 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6189b7), color-stop(100%,#133b68)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6189b7 0%,#133b68 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6189b7 0%,#133b68 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6189b7 0%,#133b68 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6189b7 0%,#133b68 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6189b7', endColorstr='#133b68',GradientType=0 ); /* IE6-9 */
+
+	overflow:auto;
+}
+#page-banner h1 {
+	margin:0 auto 0 auto;
+	padding:0;
+}
+#page-banner h1 img {
+	width:860px;
+	height:90px;
+}
+#page-banner .deadline {
+	float:right;
+	text-align:right;
+}
+#page-banner .deadline .deadline-header {
+	font-size:1.75em;
+	font-family:Antonio,'Arial Narrow';
+	color:#6189b7;
+	text-transform:uppercase;
+	line-height:.875em;
+}
+#page-banner .deadline .deadline-date {
+	margin-top:.1em;
+	font-size:3em;
+	font-family:Antonio,'Arial Narrow';
+	color:#ffffff;
+	letter-spacing:-.025em;
+	line-height:1em;
+}
+#page-banner .deadline .deadline-countdown {
+	margin-top:.75em;
+	font-size:1.5em;
+	font-family:Antonio,'Arial Narrow';
+	font-weight:normal;
+	color:#ffffff;
+	text-transform:uppercase;
+	line-height:1.125em;
+}
+#page-banner .deadline .deadline-countdown .number {
+	color:#ffcb05;
+}
+
+.mobilebutton {
+	display:none;
+}
+#pagemenu-wrapper {
+	width:100%;
+	margin:0;
+	padding:0;
+	background:#40658f;
+}
+#pagemenu {
+	width:920px;
+	margin:0 auto 0 auto;
+	padding:0;
+	text-align:left;
+	overflow:auto;
+}
+#pagemenu ul {
+	float:none;
+	list-style:none;
+	margin:0;
+	padding:0;
+	background:#40658f;
+	font-size:1.6em;
+	font-family:Antonio,'Arial Narrow',Arial;
+	font-weight:normal;
+	text-transform:uppercase;
+	z-index:8000;
+}
+#pagemenu ul li {
+	float:left;
+	margin:0;
+	padding:10px 5px 10px 5px;
+	line-height:40px;
+	z-index:8000;
+}
+#pagemenu ul li a {
+	display:block;
+	margin:0;
+	padding:0 15px 0 15px;
+	background:#6189b7;
+	text-decoration:none;
+}
+#pagemenu ul li a:link, #pagemenu ul li a:visited {
+	color:#ffffff;
+}
+#pagemenu ul li a:hover {
+	background:#00274c;
+}
+#pagemenu ul li ul {
+	display:none;
+	position:absolute;
+	width:180px;
+	margin:0;
+	padding:0;
+	background:#6189b7;
+	font-size:.8em;
+	font-family:Arial,Helvetica,sans-serif;
+	text-transform:none;
+	z-index:8000;
+}
+#pagemenu ul li ul li {
+	float:none;
+}
+#pagemenu ul li:hover ul {
+	display:block;
+}
+#pagemenu ul li:hover ul li a {
+	margin:0;
+	padding:5px 10px 5px 10px;
+	background:#6189b7;
+	line-height:normal;
+}
+#pagemenu ul li ul li a:hover {
+	background:#00274c;
+}
+
+
+.page-content {
+	width:880px;
+	margin:0 auto 0 auto;
+	padding:0 20px 1em 20px;
+	background:#ffffff;
+	overflow:auto;
+}
+
+.device-circles {
+	width:100%;
+	height:240px;
+/*	background:#00274c url('devices.jpg') center center no-repeat;*/
+	background:#00274c url('crisler-photo.jpg') center center no-repeat;
+	background-size:cover;
+}
+
+.zombie img{
+	max-width:100%;
+	margin-top:30px;
+}
+
+h1 {
+	margin:.5em 0 .5em 0;
+	font-size:2.7em;
+	font-family:Antonio,'Arial Narrow Bold',Arial;
+	font-weight:normal;
+	color:#00274c;
+	line-height:1.2em;
+	letter-spacing:-.025em;
+	text-transform:uppercase;
+}
+h2 {
+	margin:1em 0 .5em 0;
+	font-size:2.4em;
+	font-family:Antonio,'Arial Narrow Bold',Arial;
+	font-weight:normal;
+	color:#40658f;
+	color:#00274c;
+	line-height:1.2em;
+	letter-spacing:-.05em;
+	text-transform:uppercase;
+	clear:both;
+}
+h3 {
+	clear:both;
+	margin:.5em 0 .5em 0;
+	font-size:2.1em;
+	font-family:Antonio,'Arial Narrow Bold',Arial;
+	font-weight:normal;
+	color:#655a52;
+	color:#40658f;
+	line-height:1.2em;
+	letter-spacing:-.025em;
+	text-transform:uppercase;
+}
+h4 {
+	margin:.5em 0 .5em 0;
+	font-size:1.8em;
+	font-family:Antonio,'Arial Narrow Bold',Arial;
+	font-weight:normal;
+	color:#886b01;
+	letter-spacing:-.025em;
+	line-height:1.2em;
+	text-transform:uppercase;
+}
+
+ul {
+	margin:0 0 0 1em;
+	padding:0 0 0 1em;
+}
+
+a img {
+	border:0;
+}
+a:link {
+	color:#587abc;
+}
+a:visited {
+/*	color:#575294;*/
+	color:#587abc;
+}
+a:hover {
+	color:#886b01;
+}
+a:active {
+	color:#cc6600;
+}
+
+.center {
+	text-align:center;
+}
+
+.clear {
+	clear:both;
+}
+
+.nobr {
+	white-space:nowrap;
+}
+
+.intro {
+	font-size:1.4em;
+	line-height:150%;
+}
+
+.category {
+	float:left;
+	font-size:inherit;
+	overflow:auto;
+}
+.academics, .games {
+	width:280px;
+	margin:0;
+}
+.social {
+	width:280px;
+	margin:0 20px 0 20px;
+}
+.category ul {
+	margin-top:.5em;
+	margin-bottom:1.5em;
+	margin-left:10px;
+	padding-left:10px;
+	overflow:auto;
+}
+
+.tlidea {
+	background:#00274c;
+	padding:.5em 20px .5em 20px;
+	color:#ffffff;
+}
+.tlidea h3 {
+	color:#ffcb05;
+}
+
+#allentries {
+	width:600px;
+	height:500px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.winner {
+	float:left;
+	width:50%;
+	font-size:inherit;
+	overflow:auto;
+}
+.winner .video {
+	width:280px;
+	margin:1em auto 0 0;
+}
+
+.prize {
+	float:left;
+	font-size:inherit;
+}
+.first, .third {
+	width:280px;
+	margin:0;
+}
+.second {
+	width:280px;
+	margin:0 20px 0 20px;
+}
+
+
+.countdown {
+	padding:1.5em;
+/*	background:#40658f url('devices.jpg') center center no-repeat;*/
+	background:#886b01;
+	font-size:2.4em;
+	font-family:Antonio,'Arial Narrow Bold',Arial;
+	font-weight:normal;
+	color:#ffffff;
+	line-height:1.2em;
+	letter-spacing:-.05em;
+	text-transform:uppercase;
+	text-align:center;
+}
+.countdown .number {
+	font-size:1.6em;
+}
+
+.tagline {
+	padding:1.5em 1em 1.5em 1em;
+/*	background:#40658f url('devices.jpg') center center no-repeat;*/
+	background:#6189b7;
+	font-size:2.4em;
+	font-family:Antonio,'Arial Narrow Bold',Arial;
+	font-weight:normal;
+	color:#ffffff;
+	line-height:1.2em;
+	letter-spacing:-.05em;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+#Form_Identity {
+	display:none;
+	visibility:hidden;
+}
+input[type=email], textarea {
+	margin-top:.25em;
+	min-width:260px;
+	background:#f9f9f9;
+	outline:none;
+	border:1px solid #cccccc;
+	font-size:1em;
+	font-family:inherit;
+	padding:10px;
+}
+select {
+	margin-top:.25em;
+	min-width:280px;
+	background:#f9f9f9;
+	outline:none;
+	border:1px solid #cccccc;
+	font-size:1em;
+	font-family:inherit;
+	padding:10px;
+}
+input[type=email]:focus, select:focus, textarea:focus {
+	background:#ffffff;
+	-webkit-appearance:none;
+	border:1px solid #ff9966;
+	box-shadow: 0 0 2px #ff9966;
+	-webkit-box-shadow: 0 0 2px #ff9966;
+}
+.blue-button {
+	display:inline-block;
+	margin-top:.25em;
+	padding:10px 2em 10px 2em;
+	border:0;
+	background:#40658f;
+	color:#ffffff;
+	-webkit-appearance:none;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	-webkit-border-radius:2x;
+	border-radius:2px;
+	font-size:inherit;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	white-space:nowrap;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	cursor:default;
+}
+.blue-button:hover {
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	background:#6189b7;
+}
+.gray-button {
+	display:inline-block;
+	padding:10px 2em 10px 2em;
+	border:0;
+	background:#666666;
+	color:#ffffff;
+	-webkit-appearance:none;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	font-size:inherit;
+/*	font-weight:bold;*/
+	text-align:center;
+	text-decoration:none;
+	white-space:nowrap;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.gray-button:hover {
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	background:#555555;
+}
+
+.req {
+	font-weight:bold;
+	color:#cc3300;
+}
+
+
+.sponsors {
+	margin:0 auto 0 auto;
+	text-align:center;
+}
+.sponsor {
+	display:inline-block;
+	align:center;
+	width:220px;
+	height:60px;
+	margin:0;
+	padding:50px 0 50px 0;
+	text-align:center;
+}
+
+.absmiddle {
+	vertical-align:middle;
+}
+
+#page-footer {
+	width:880px;
+	margin:0 auto 0 auto;
+	padding:20px;
+	background:#555555;
+}
+
+/* Monitor */
+@media screen and (max-width:960px) {
+}
+
+/* Tablet */
+@media screen and (max-width:800px) { /* was 768 */
+	body {
+		margin:0;
+		background:#e4e1df;
+		font-family:Arial,Helvetica,sans-serif;
+		font-size:1.25em;
+		color:#333333;
+		line-height:150%;
+	}
+	#page-banner, #page-banner-inner {
+		width:auto;
+	}
+	#page-banner-inner {
+		padding:1em 20px 1em 20px;
+	}
+	#page-banner h1 img {
+		width:100%;
+		max-width:860px;
+		height:auto;
+	}
+	@media screen and (-webkit-device-pixel-ratio: 2) {
+		#page-banner h1 {
+/*			float:none;
+			background:transparent url('mobile-apps-challenge-banner@2x.png') no-repeat;
+			background-size:371px 72px;*/
+		}
+	}
+	#page-banner .deadline {
+		float:none;
+		margin-top:.5em;
+	}
+	#page-banner .deadline .deadline-header {
+		display:inline;
+	}
+	#page-banner .deadline .deadline-date {
+		display:inline;
+		font-size:2.25em;
+	}
+	#page-banner .deadline .deadline-countdown {
+		margin-top:.25em;
+	}
+
+	#mobilemenu {
+		width:100%;
+		margin:0 auto 0 auto;
+	}
+	.mobilebutton {
+		display:block;
+		padding:0 10px 0 60px;
+		background:#40658f url('icon-menu.png') 20px 50% no-repeat;
+		font-size:1.5em;
+		font-family:Antonio,'Arial Narrow',Arial;
+		text-transform:uppercase;
+		text-align:left;
+		text-decoration:none;
+		line-height:60px;
+		color:#ffffff;
+	}
+	#pagemenu {
+		display:none;
+		position:absolute;
+		z-index:99999;
+	}
+	#mobilemenu:hover #pagemenu {
+/*		display:block;*/
+	}
+	#pagemenu {
+		float:none;
+		width:auto;
+		margin:0 0 0 10px;
+		padding:0;
+		text-align:left;
+		overflow:auto;
+	}
+	#pagemenu ul {
+		font-family:Arial,Helvetica,sans-serif;
+		text-transform:none;
+	}
+	#pagemenu ul li {
+		float:none;
+		margin:0;
+		padding:0;
+		line-height:50px;
+		z-index:8000;
+	}
+	#pagemenu ul li a {
+		background:#40658f;
+		font-size:.8em;
+		padding:0 60px 0 50px;
+	}
+	#pagemenu ul li ul {
+		display:none;
+	}
+	#pagemenu ul li:hover ul {
+		display:none;
+	}
+
+	.page-content {
+		width:auto;
+	}
+	.intro {
+		font-size:inherit;
+	}
+	.category, .prize {
+		float:none;
+		width:auto;
+		margin-right:0;
+		font-size:inherit;
+	}
+	.academics, .games, .social,
+	.first, .second, .third {
+		width:100%;
+		margin:0;
+	}
+	#allentries {
+		width:480px;
+		height:400px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	.winner {
+		float:none;
+		width:auto;
+		font-size:inherit;
+		overflow:auto;
+	}
+	.winner .video {
+		width:280px;
+		margin:1em auto 0 auto;
+	}
+	.sponsor {
+		display:inline-block;
+		align:center;
+		width:220px;
+		height:60px;
+		margin:0;
+		padding:20px 0 20px 0;
+		text-align:center;
+	}
+	#page-footer {
+		width:auto;
+	}
+	#page-footer .wordmark {
+		width:100%;
+		max-width:313px;
+		height:auto;
+	}
+}
+
+/* Phone */
+@media screen and (max-width:524px) { /* was 640 */
+	body {
+		margin:0;
+		background:#e4e1df;
+		font-family:Arial,Helvetica,sans-serif;
+		font-size:1.25em;
+		color:#333333;
+		line-height:150%;
+	}
+	#page-banner, #page-banner-inner {
+		width:auto;
+	}
+	#page-banner h1 {
+	}
+	@media screen and (-webkit-device-pixel-ratio: 2) {
+		#page-banner h1 {
+		}
+	}
+	#page-banner .deadline {
+		float:none;
+		margin-top:.5em;
+	}
+	#page-banner .deadline .deadline-header {
+		display:inline;
+	}
+	#page-banner .deadline .deadline-date {
+		display:inline;
+		font-size:2.25em;
+	}
+	#page-banner .deadline .deadline-countdown {
+		margin-top:auto;
+	}
+
+	.mobilebutton {
+		background:#40658f url('icon-menu.png') 20px 50% no-repeat;
+		line-height:50px;
+	}
+	#pagemenu {
+		float:none;
+		width:100%;
+		margin:0;
+		padding:0;
+		background:#40658f;
+		text-align:left;
+		overflow:auto;
+	}
+	#pagemenu ul {
+		width:100%;
+		font-family:Arial,Helvetica,sans-serif;
+		text-transform:none;
+	}
+	#pagemenu ul li {
+		font-size:.8em;
+		line-height:44px;
+	}
+	#pagemenu ul li a {
+		background:#40658f;
+		padding:0 20px 0 60px;
+	}
+
+	.page-content {
+		width:auto;
+	}
+	.intro {
+		font-size:inherit;
+	}
+	.category, .prize {
+		float:none;
+		width:auto;
+		margin-right:0;
+		font-size:inherit;
+	}
+	.category ul {
+		margin-bottom:1em;
+	}
+	.academics, .games, .social,
+	.first, .second, .third {
+		width:100%;
+		margin:0;
+	}
+	#allentries {
+		width:280px;
+		height:233px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	.winner {
+		float:none;
+		width:auto;
+		font-size:inherit;
+		overflow:auto;
+	}
+	.winner .video {
+		width:280px;
+		height:233px;
+		margin:1em auto 0 auto;
+	}
+	.sponsor {
+		display:inline-block;
+		align:center;
+		width:220px;
+		height:60px;
+		margin:0;
+		padding:20px 0 20px 0;
+		text-align:center;
+	}
+	#page-footer {
+		width:auto;
+	}
+	#page-footer .wordmark {
+		width:100%;
+		max-width:313px;
+		height:auto;
+	}
+
+}

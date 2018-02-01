@@ -1,0 +1,12 @@
+http://mobileapps.umich.edu/
+http://mobileapps.umich.edu/design/
+http://mobileapps.umich.edu/build/
+http://mobileapps.umich.edu/test/
+http://mobileapps.umich.edu/release/
+http://mobileapps.umich.edu/maintain/
+http://mobileapps.umich.edu/news-events/
+http://mobileapps.umich.edu/news-events/archives/
+http://mobileapps.umich.edu/app-competitions/
+http://mobileapps.umich.edu/connect/
+http://mobileapps.umich.edu/app-roadmap/
+http://mobileapps.umich.edu/um-apps/

@@ -1,0 +1,142 @@
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #0A528C;
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+  /* overflow: hidden; /* Sometimes you want to prevent overlapping with main div. */
+  float:left;
+  margin:0;
+  padding:0;
+/*  width:940px;*/
+/*  height:40px;*/
+  height:auto;
+  border-bottom: 2px #d7d7d7 solid;  
+}
+
+#navigation ul.links, /* Main menu and secondary menu links */
+#navigation .content ul /* Menu block links */ {
+  float:left;
+  overflow:auto;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+#navigation ul.links li, /* A simple method to get navigation links to appear in one line. */
+#navigation .content li {
+  float: left;
+  padding:0;
+  margin-right:8px;
+  list-style:none;
+  background: url('/sites/all/themes/umzen_apis/images/linkbg.jpg') left top repeat-x;
+}
+
+#navigation .content ul ul li {
+	background: #fff;
+	border-top:1px solid #d2d2d2;
+}
+
+#navigation ul li:hover {
+background: #d0d8e0;
+}
+
+#navigation ul li a:link, 
+#navigation ul li a:visited {
+	color:#363636;
+}
+
+#navigation ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  padding:4px 10px 4px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:Calibri,Arial,Helvetica,sans-serif;
+}
+
+
+#navigation ul li {
+
+}
+
+.region-navigation {
+	margin:0 10px 0 10px;
+}
+
+
+/* superfish menu settings */
+/* white.css was also altered: sites/all/libraries/superfish/style/white.css */
+#block-superfish-1 {
+	margin:0;
+	padding:0;
+}
+  
+#block-superfish-1 .sf-menu {
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+}
+
+#block-superfish-1 li {}
+
+#block-superfish-1 li.first {
+	margin-left:0px;
+}
+
+#block-superfish-1 ul li a {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:Calibri,Arial,Helvetica,sans-serif;
+  padding:6px 10px 6px 10px;
+  margin-top:0;
+}
+/* end superfish settings */
+
+/*for when li's have child li's*/
+#block-superfish-1 .menuparent a {
+  padding:6px 26px 6px 16px;}
+
+/*
+ * Main menu and Secondary menu links
+ */
+#main-menu {
+	
+}
+
+#secondary-menu {
+  float: right;
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks
+ *
+ * Drupal core has limited ways in which it can display its menus. To get around
+ * these limitations, see http://drupal.org/project/menu_block
+ */
+.block-menu-block {
+}
+
+
+/*next two rules added by mrschlei 4/12/12*/
+.region-content {margin-left:20px !important;}
+
+.feed-icon {margin-left:20px;}

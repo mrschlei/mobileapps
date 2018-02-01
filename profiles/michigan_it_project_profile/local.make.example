@@ -1,0 +1,22 @@
+; michigan_it_project_profile make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ TODO modules without versions +++++
+
+projects[cosign_auth][version] = "" ; TODO add version
+projects[cosign_auth][subdir] = "custom"
+
+; +++++ Libraries +++++
+
+; superfish
+libraries[superfish][directory_name] = "superfish"
+libraries[superfish][type] = "library"
+libraries[superfish][destination] = "libraries"
+libraries[superfish][download][type] = "get"
+libraries[superfish][download][url] = "" ; TODO add download URI
+

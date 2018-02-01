@@ -1,0 +1,58 @@
+; Packaging information for its_project
+name = "ITS Project"
+description = "use for its.umich.edu'projects/*"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Access control
+dependencies[] = content_access
+; Chaos tool suite
+dependencies[] = ctools
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = user
+; Custom breadcrumbs
+dependencies[] = custom_breadcrumbs
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_views
+; Development
+dependencies[] = profiler_builder
+; Other
+dependencies[] = cosign_auth
+; User interface
+dependencies[] = ckeditor
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+; Webform
+dependencies[] = webform
+

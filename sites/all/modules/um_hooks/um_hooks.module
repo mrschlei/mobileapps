@@ -1,0 +1,14 @@
+<?php
+
+
+function um_hooks_form_alter(&$form, &$form_state, $form_id) {
+	if ($_SERVER['HTTP_HOST']=="documentation.its.umich.edu") {
+		$message = '<h2>HEY!!<br />HEY YOU!!!</h2><p>Don\'t add or edit users without checking with Janet Eaton first!!!!!</p><p>I\'m sorry I yelled. Here\'s a kitten.</p><p><img src="http://its.umich.edu/sites/default/files/apology-kitten.jpg" alt="it\'s an apology kitten." title="it\'s an apology kitten." /></p>';
+		if ($form_id == 'user_register_form') {
+			drupal_set_message($message, 'warning');
+  		}
+		if ($form_id == 'user_profile_form') {
+			drupal_set_message($message, 'warning');
+		}  
+	}
+}

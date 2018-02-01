@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="backup_migrate.drush.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176540000000" remote="130654176540000000" Dst="1" />
+<file name="crud.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176550000000" remote="130654176550000000" Dst="1" />
+<file name="destinations.browser.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176550000000" remote="130654176550000000" Dst="1" />
+<file name="destinations.db.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176550000000" remote="130654176550000000" Dst="1" />
+<file name="destinations.db.mysql.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176560000000" remote="130654176560000000" Dst="1" />
+<file name="destinations.email.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176560000000" remote="130654176560000000" Dst="1" />
+<file name="destinations.file.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176560000000" remote="130654176560000000" Dst="1" />
+<file name="destinations.ftp.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176560000000" remote="130654176560000000" Dst="1" />
+<file name="destinations.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176570000000" remote="130654176570000000" Dst="1" />
+<file name="destinations.nodesquirrel.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176570000000" remote="130654176570000000" Dst="1" />
+<file name="destinations.s3.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176570000000" remote="130654176570000000" Dst="1" />
+<file name="files.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176580000000" remote="130654176580000000" Dst="1" />
+<file name="filters.backup_restore.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176580000000" remote="130654176580000000" Dst="1" />
+<file name="filters.compression.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176580000000" remote="130654176580000000" Dst="1" />
+<file name="filters.encryption.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176580000000" remote="130654176580000000" Dst="1" />
+<file name="filters.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176580000000" remote="130654176580000000" Dst="1" />
+<file name="filters.statusnotify.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176580000000" remote="130654176580000000" Dst="1" />
+<file name="filters.utils.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176590000000" remote="130654176590000000" Dst="1" />
+<file name="profiles.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176590000000" remote="130654176590000000" Dst="1" />
+<file name="schedules.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130654176590000000" remote="130654176590000000" Dst="1" />
+</dwsync>

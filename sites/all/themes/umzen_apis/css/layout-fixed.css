@@ -1,0 +1,257 @@
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+body {
+}
+
+#page-wrapper,
+.region-bottom {
+  /*
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. See also the ie6.css file
+   * for the necessary IE5/IE6quirks hack to center a div.
+   */
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  /*added by mrschlei 4/19/12*/
+  padding-bottom:1px;
+  /* removed by mrschlei 9/20/13 - redesign
+  border:1px solid #fff;*/
+  margin-top:10px;
+  /*needed for IE only:*/
+  margin-bottom:10px;
+
+}
+
+#page {
+}
+
+/*
+ * Header
+ */
+#header {
+}
+
+#header .section {
+}
+
+.region-header {
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content,
+.no-sidebars #content {
+  float: left; /* LTR */
+  width: 960px;
+  margin-left: 0; /* LTR */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.sidebar-first #content {
+  width: 760px;
+  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+  width: 710px;
+  margin-left: 0; /* LTR */
+  margin-right: -710px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  width: 560px;
+  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+#content .section {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Navigation
+ */
+#navigation {
+  float: left; /* LTR */
+  width: 100%;
+  margin-left: 0; /* LTR */
+  margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+  height: 3em; /* The navigation can have any arbritrary height. We picked one
+                    that is the line-height plus 1em: 1.3 + 1 = 2.3
+                    Set this to the same value as the margin-top below. */
+}
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second {
+  margin-top: 3em; /* Set this to the same value as the navigation height above. */
+}
+
+#navigation .section {
+}
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 0; /* LTR */
+  margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+  margin: 0 20px 0 0; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 250px;
+  margin-left: 710px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: 0px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  margin-top:2em !important;
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 0 0 0 20px; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+.region-footer {
+}
+
+/*
+ * Page bottom
+ */
+.region-bottom /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+.region-footer,
+.region-bottom {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/
+
+
+/*Styles added by mrschlei 4/18/12 */
+
+.node-title {margin: 1em 0 .5em 0;color: #036;}
+.node-title a {color: #036;text-decoration:none;}
+.node-title a:hover {color: #369;text-decoration:underline;}
+
+#page-title {margin: 10px 0 0px 12px;color: #002e5e;}
+
+.block-title {color:#000;margin-bottom:8px !important;margin-top:0 !important;padding-top:0 !important;}
+
+.region-content {margin-right:10px;}
+
+.view-header h2 {margin-top:0;margin-bottom:0;}
+
+
+
+/*formatting for the Request an API webform*/
+#edit-submitted-name {
+	width: 170px !important;
+}
+
+#edit-submitted-uniqname {
+	width: 170px !important;
+}
+
+/*formatting for the Directory of APIs table*/
+.views-table td {padding:10px;}
+
+.views-table th {padding:0px 10px 10px 10px;}
+
+.field-collection-view {border-left:1px solid #ccc;padding-left:8px;}
+
+.views-field-title a {font-weight:bold;}
+.views-field-title div a {padding:3px 4px 4px 4px;background-color:#f9d9be;text-decoration:none;font-weight:normal;}
+.views-field-title div a:hover {text-decoration:underline;}
+
+/*views-table td.active {background-color:#eee;}*/
+.views-table td {background-color:#eee;border-bottom:1px solid #ccc;}
+.views-table tr.even td {background-color:#f7f7f7;}
+
+/*Styles for the API display pages*/
+/*code should be in monospace, right? Right.*/
+.field-name-field-api-res-request-code .field-items {font-family:"Courier New", Courier, monospace;margin:5px 0 10px 10px;padding:10px;background-color:#f2f2f2;}
+.field-name-field-api-res-response-code .field-items {font-family:"Courier New", Courier, monospace;margin:5px 0 10px 10px;padding:10px;background-color:#f2f2f2;}
+code {display:block;font-family:"Courier New", Courier, monospace;background-color:#f2f2f2;margin:5px 20px 10px 10px;padding:8px;}
+
+.togglemediv {margin-left:18px;}
+
+.toggleme {font-weight:bold;padding-left:12px;background-image:url('/sites/all/themes/umzen_apis/images/arrow-rt.png');background-repeat:no-repeat;margin-left:0;}
+
+.cke_show_borders {background-color:#fff !important;background-image:none !important;}
+
+ol li img {margin: 12px 8px 12px 8px;}
+
+.toggle {color:blue;cursor:pointer;text-decoration:underline;font-size:13px;font-weight:bold;float:right;margin-right:20px;display:block;}
+.toggle:hover {color:blue;text-decoration:none;}

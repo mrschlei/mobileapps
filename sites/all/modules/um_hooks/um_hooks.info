@@ -1,0 +1,7 @@
+﻿; $Id: um_hooks.info,v 1.1 2012/10 19:57:41 mrschlei Exp $
+name = UM_Hooks
+description = These hooks pre-populate the API content type form with values from LDAP.
+core = 7.x
+files[] = um_hooks.module
+
+

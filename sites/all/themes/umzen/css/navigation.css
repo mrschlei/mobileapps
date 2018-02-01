@@ -1,0 +1,165 @@
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  /*color: #ffffff;*/
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+  /* overflow: hidden; /* Sometimes you want to prevent overlapping with main div. */
+  margin:0 10px 120px 10px;
+  background: #5C8FC2;
+  width:940px;
+  height:40px;
+}
+
+/*non-devtoolkit menus:*/
+#block-system-main-menu {margin:0;padding:0;}
+
+#block-system-main-menu .menu {padding-top:6px !important;} 
+
+#block-system-main-menu li {padding-top:4px !important;padding-bottom:4px !important;}
+
+#block-system-main-menu li.first {
+	margin-left:6px;	
+}
+
+#block-system-main-menu ul li a {
+  width:170px;
+  margin: 0;
+  padding: 0 15px 0 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:Calibri,Arial,Helvetica,sans-serif;
+}
+
+/* devtoolkit menu settings */
+/* blue.css was also altered: sites/all/libraries/superfish/style/blue.css */
+#block-superfish-1 {margin:0px 0 0 0;padding:0;
+  }
+  
+#block-superfish-1 .menu {padding-top:6px !important;} 
+
+#block-superfish-1 li {padding-top:4px !important;padding-bottom:4px !important;}
+
+#block-superfish-1 li.first {
+	margin-left:6px;	
+}
+
+#block-superfish-1 ul li a {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:Calibri,Arial,Helvetica,sans-serif;
+  padding:6px 23px 6px 16px;
+  margin-top:4px;
+}
+/* end devtoolkit settings */
+ 
+
+
+
+#navigation ul.links, /* Main menu and secondary menu links */
+#navigation .content ul /* Menu block links */ {
+  margin: 0;
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+#navigation ul.links li, /* A simple method to get navigation links to appear in one line. */
+#navigation .content li {
+  float: left; /* LTR */
+  padding: 0 0px 0 0; /* LTR */
+  list-style:none;
+}
+
+#navigation ul li:hover {
+  background:#369 url("../images/menu-hover.png") repeat-x;
+}
+
+#navigation ul li a:link, 
+#navigation ul li a:visited {
+	color:#ffffff;
+}
+
+#navigation ul li {
+
+}
+
+.region-navigation {
+}
+
+/*
+ * Main menu and Secondary menu links
+ */
+#main-menu {
+	
+}
+
+#secondary-menu {
+  float: right;
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks
+ *
+ * Drupal core has limited ways in which it can display its menus. To get around
+ * these limitations, see http://drupal.org/project/menu_block
+ */
+.block-menu-block {
+}
+
+/* styles a div that was manually added to ../templates/page.tpl.php */
+#umzen-banner {
+	background: url("../images/home-tagline.jpg") repeat scroll 0 0 transparent;
+    height: 120px;
+    margin: 10px 0 10px 10px;
+    overflow: hidden;
+    text-indent: -5000px;
+    width: 940px;
+}
+
+/*next two rules added by mrschlei 4/12/12*/
+.region-content {margin-left:14px !important;}
+
+.feed-icon {margin-left:14px;}
+
+#developers {
+float: right;
+background: #1A4D80 url("../images/for-developers-menu-bg.png") right top no-repeat;
+height: 40px;
+margin: 0;
+padding: 0;
+font-size: 12px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+#developers a {display: block;
+margin: 5px;
+color:#fff;
+padding: 0 15px 0 15px;
+line-height: 30px;
+text-decoration: none;}
+
+#developers a:hover {
+	background:#003366 url("../images/for-developers-menu-hover.png") repeat-x;;
+}

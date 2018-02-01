@@ -1,0 +1,245 @@
+; Packaging information for sensitive_data_guide
+name = "Sensitive Data Guide"
+description = ""
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Chaos tool suite
+dependencies[] = ctools
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = php
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = statistics
+dependencies[] = syslog
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+; Development
+dependencies[] = profiler_builder
+; Display Suite
+dependencies[] = ds
+dependencies[] = ds_extras
+dependencies[] = ds_format
+dependencies[] = ds_forms
+dependencies[] = ds_ui
+; Fields
+dependencies[] = field_group
+dependencies[] = link
+dependencies[] = node_reference
+dependencies[] = references
+dependencies[] = user_reference
+; Other
+dependencies[] = advanced_help
+dependencies[] = cosign_auth
+dependencies[] = dataguide_hooks
+dependencies[] = entity
+dependencies[] = redirect
+dependencies[] = revisioning
+; Permissions
+dependencies[] = override_node_options
+dependencies[] = view_unpublished
+; Relation
+dependencies[] = relation
+dependencies[] = relation_dummy_field
+dependencies[] = relation_endpoint
+dependencies[] = relation_ui
+; Search
+dependencies[] = search_log
+; Services
+dependencies[] = services
+; Spam control
+dependencies[] = captcha
+dependencies[] = image_captcha
+; User interface
+dependencies[] = ckeditor
+; Views
+dependencies[] = views
+dependencies[] = views_json
+dependencies[] = views_ui
+; Webform
+dependencies[] = webform
+; Features
+dependencies[] = features
+
+; ----------
+; Variables
+; ----------
+variables[additional_settings__active_tab_page] = 'edit-workflow'
+variables[additional_settings__active_tab_rolebased_sensitivity_guide] = 'edit-workflow'
+variables[additional_settings__active_tab_sensitive_data] = 'edit-submission'
+variables[additional_settings__active_tab_service] = 'edit-menu'
+variables[additional_settings__active_tab_webform] = 'edit-display'
+variables[admin_theme] = 'seven'
+variables[anonymous] = 'Anonymous'
+variables[cache_class_cache_ctools_css] = 'CToolsCssCache'
+variables[captcha_add_captcha_description] = 1
+variables[captcha_default_challenge] = 'captcha/Math'
+variables[captcha_default_validation] = '1'
+variables[captcha_description] = 'This question is for testing whether you are a human visitor and to prevent automated spam submissions.'
+variables[captcha_persistence] = '1'
+variables[comment_default_mode_page] = 1
+variables[comment_default_mode_webform] = 1
+variables[comment_default_per_page_page] = '50'
+variables[comment_default_per_page_rolebased_sensitivity_guide] = '50'
+variables[comment_default_per_page_sensitive_data] = '50'
+variables[comment_default_per_page_service] = '50'
+variables[comment_default_per_page_webform] = '50'
+variables[comment_form_location_page] = 1
+variables[comment_form_location_rolebased_sensitivity_guide] = 1
+variables[comment_form_location_sensitive_data] = 1
+variables[comment_form_location_service] = 1
+variables[comment_form_location_webform] = 1
+variables[comment_page] = '0'
+variables[comment_preview_page] = '1'
+variables[comment_preview_rolebased_sensitivity_guide] = '0'
+variables[comment_preview_sensitive_data] = '1'
+variables[comment_preview_service] = '1'
+variables[comment_preview_webform] = '1'
+variables[comment_rolebased_sensitivity_guide] = '0'
+variables[comment_sensitive_data] = '0'
+variables[comment_service] = '0'
+variables[comment_subject_field_page] = 1
+variables[comment_subject_field_rolebased_sensitivity_guide] = 1
+variables[comment_subject_field_sensitive_data] = 1
+variables[comment_subject_field_service] = 1
+variables[comment_subject_field_webform] = 1
+variables[comment_webform] = '2'
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'America/New_York'
+variables[default_field_group][group_data_service_applicability|node|sensitive_data|form] = false
+variables[default_nodes_main] = '10'
+variables[ds_extras_field_template] = 1
+variables[field_bundle_settings_node__rolebased_sensitivity_guide][view_modes][full][custom_settings] = true
+variables[field_bundle_settings_node__rolebased_sensitivity_guide][view_modes][teaser][custom_settings] = true
+variables[field_bundle_settings_node__rolebased_sensitivity_guide][view_modes][rss][custom_settings] = false
+variables[field_bundle_settings_node__rolebased_sensitivity_guide][view_modes][search_index][custom_settings] = false
+variables[field_bundle_settings_node__rolebased_sensitivity_guide][view_modes][search_result][custom_settings] = false
+variables[field_bundle_settings_node__rolebased_sensitivity_guide][extra_fields][form][title][weight] = '-5'
+variables[field_bundle_settings_node__sensitive_data][view_modes][teaser][custom_settings] = true
+variables[field_bundle_settings_node__sensitive_data][view_modes][full][custom_settings] = false
+variables[field_bundle_settings_node__sensitive_data][view_modes][rss][custom_settings] = false
+variables[field_bundle_settings_node__sensitive_data][view_modes][search_index][custom_settings] = false
+variables[field_bundle_settings_node__sensitive_data][view_modes][search_result][custom_settings] = false
+variables[field_bundle_settings_node__sensitive_data][view_modes][revision][custom_settings] = false
+variables[field_bundle_settings_node__sensitive_data][extra_fields][form][title][weight] = '0'
+variables[field_bundle_settings_node__service][view_modes][teaser][custom_settings] = true
+variables[field_bundle_settings_node__service][view_modes][full][custom_settings] = false
+variables[field_bundle_settings_node__service][view_modes][rss][custom_settings] = false
+variables[field_bundle_settings_node__service][view_modes][search_index][custom_settings] = false
+variables[field_bundle_settings_node__service][view_modes][search_result][custom_settings] = false
+variables[field_bundle_settings_node__service][view_modes][revision][custom_settings] = false
+variables[field_bundle_settings_node__service][extra_fields][form][title][weight] = '0'
+variables[filter_fallback_format] = 'plain_text'
+variables[ft-default] = 'theme_field'
+variables[googleanalytics_account] = 'UA-5440048-5'
+variables[googleanalytics_custom] = '0'
+variables[googleanalytics_domain_mode] = '0'
+variables[googleanalytics_pages] = 'admin
+admin/*
+batch
+node/add*
+node/*/*
+user/*/*'
+variables[googleanalytics_privacy_donottrack] = 1
+variables[googleanalytics_roles][1] = 0
+variables[googleanalytics_roles][2] = 0
+variables[googleanalytics_roles][3] = 0
+variables[googleanalytics_roles][4] = 0
+variables[googleanalytics_roles][5] = 0
+variables[googleanalytics_trackfiles] = 1
+variables[googleanalytics_trackfiles_extensions] = '7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip'
+variables[googleanalytics_trackmailto] = 1
+variables[googleanalytics_trackmessages][status] = 0
+variables[googleanalytics_trackmessages][warning] = 0
+variables[googleanalytics_trackmessages][error] = 0
+variables[googleanalytics_trackoutbound] = 1
+variables[googleanalytics_visibility_pages] = '0'
+variables[googleanalytics_visibility_roles] = '0'
+variables[maintenance_mode_message] = 'Sensitive Data Guide is currently under maintenance. We should be back shortly. Thank you for your patience.'
+variables[menu_options_page][0] = 'main-menu'
+variables[menu_options_webform][0] = 'main-menu'
+variables[menu_parent_page] = 'main-menu:0'
+variables[menu_parent_rolebased_sensitivity_guide] = 'main-menu:0'
+variables[menu_parent_sensitive_data] = 'main-menu:0'
+variables[menu_parent_service] = 'main-menu:0'
+variables[menu_parent_webform] = 'main-menu:0'
+variables[new_revisions_page] = '0'
+variables[new_revisions_rolebased_sensitivity_guide] = '1'
+variables[new_revisions_sensitive_data] = '0'
+variables[new_revisions_service] = '0'
+variables[new_revisions_webform] = '0'
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[node_options_rolebased_sensitivity_guide][0] = 'moderation'
+variables[node_options_rolebased_sensitivity_guide][1] = 'revision'
+variables[node_options_sensitive_data][0] = 'revision'
+variables[node_options_service][0] = 'revision'
+variables[node_options_webform][0] = 'status'
+variables[node_options_webform][1] = 'promote'
+variables[node_preview_page] = '1'
+variables[node_preview_rolebased_sensitivity_guide] = '1'
+variables[node_preview_sensitive_data] = '1'
+variables[node_preview_service] = '1'
+variables[node_preview_webform] = '1'
+variables[page_manager_override_anyway] = true
+variables[path_alias_whitelist][node] = true
+variables[save_continue_role_for_sensitivity_guide] = 'Save and add fields'
+variables[save_continue_sensitive_data] = 'Save and add fields'
+variables[save_continue_service] = 'Save and add fields'
+variables[search_log_cron] = '0'
+variables[search_log_modules_enabled][node] = 'node'
+variables[search_log_modules_enabled][cosign_auth] = 0
+variables[search_log_modules_enabled][user] = 0
+variables[search_log_terms] = '0'
+variables[site_frontpage] = 'node/43'
+variables[theme_default] = 'umzen_dataguide'
+variables[tracking__active_tab] = 'edit-privacy'
+variables[user_cancel_method] = 'user_cancel_block'
+variables[user_email_verification] = 1
+variables[user_pictures] = 1
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_path] = 'pictures'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = '2'
+variables[webform_csv_delimiter] = '\\t'
+variables[webform_default_from_address] = 'itswebteam@umich.edu'
+variables[webform_default_from_name] = 'Sensitive Data Guide'
+variables[webform_default_subject] = 'Form submission from: %title'
+variables[webform_email_address_format] = 'long'
+variables[webform_export_format] = 'delimited'
+variables[webform_node_types][0] = 'webform'
+variables[webform_search_index] = 1
+variables[webform_submission_access_control] = '1'
+variables[workbench_moderation_default_state_page] = 'draft'
+variables[workbench_moderation_default_state_rolebased_sensitivity_guide] = 'draft'
+

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Projects Content Types feature.
+ */
+
+include_once 'projects_content_types.features.inc';

@@ -1,0 +1,559 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+@font-face {
+	font-family:'Steelfish';
+	font-style:normal;
+	font-weight:normal;
+	src:url(../webfonts/steelfish_rg-webfont.eot);
+	src:url(../webfonts/steelfish_rg-webfont.eot?) format('eot'),url(../webfonts/steelfish_rg-webfont.woff) format('woff');
+}
+@font-face {
+	font-family:'Antonio Light';
+	font-style:normal;
+	font-weight:normal;
+	src:url(../webfonts/antonio-light-webfont.eot);
+	src:url(../webfonts/antonio-light-webfont.eot?) format('eot'),url(../webfonts/antonio-light-webfont.woff) format('woff');
+}
+@font-face {
+	font-family:'Antonio';
+	font-style:normal;
+	font-weight:normal;
+	src:url(../webfonts/antonio-regular-webfont.eot);
+	src:url(../webfonts/antonio-regular-webfont.eot?) format('eot'),url(../webfonts/antonio-regular-webfont.woff) format('woff');
+}
+@font-face {
+	font-family:'FontAwesome';
+	font-style:normal;
+	font-weight:normal;
+	src:url(../webfonts/font-awesome/fonts/fontawesome-webfont.eot);
+	src:url(../webfonts/font-awesome/fonts/fontawesome-webfont.eot?) format('eot'),url(../webfonts/font-awesome/fonts/fontawesome-webfont.woff) format('woff');
+}
+@import url('../webfonts/font-awesome/css/font-awesome.min.css');
+
+html {margin:0; padding:0; height:100%;}
+body {margin:0; padding:0; width:100%; height:100%; background:#eff0f1; font-family:Helvetica, Arial, sans-serif; font-size:18px;}
+
+a:link {text-decoration:none}
+a:visited {text-decoration:none}
+a:hover {text-decoration:none}
+a:active {text-decoration:none}
+
+h1 {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; font-size:48px; line-height:50px; margin:0; color:#333333;}
+h2 {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; font-size:41px; line-height:43px; margin:0; color:#333333;}
+h3 {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; font-size:34px; line-height:36px; margin:20px 0 0 0; color:#333333;}
+h4 {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; font-size:27px; line-height:29px; margin:15px 0 0 0; color:#333333;}
+h5 {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; font-size:20px; line-height:22px; margin:15px 0 0 0; color:#333333;}
+p {font-family:Calibri, 'Gill Sans', Arial, Verdana, sans-serif; font-size:18px; line-height:20px; color:#333333; margin-top:2px;}
+ul {font-family:Calibri, 'Gill Sans', Arial, Verdana, sans-serif; font-size:18px; line-height:20px; color:#333333; margin-top:2px;}
+
+.mobileMenuLinks {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; font-size:20px; color:#ffffff;}
+
+.linkTo {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:28px; font-size:26px;}
+.antonioWhite {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:20px; font-size:16px; color:white;}
+.antH1 {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:47px; font-size:46px;}
+.antH2 {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:31px; font-size:26px;}
+.clear {clear:both;}
+.center {text-align:center;}
+
+.black {color:#333333;}
+.darkGrey {color:#494542;}
+.white {color:#ffffff;}
+.lightGrey {color:#ebebfc;}
+
+.mobileAppsBanner {width:100%; max-width:400px; border:0;}
+.appsCycle {width:100%; max-width:500px; border:0;}
+.leftCycleContent {width:220px; border:0;}
+.leftCycleContentMobile {display:none; visibility:hidden;}
+.designIcon {width:100%; max-width:450px; border:0;}
+.buildIcon {width:100%; max-width:450px; border:0;}
+.testingIcon {width:100%; max-width:450px; border:0;}
+.releaseIcon {width:100%; max-width:450px; border:0;}
+.maintainIcon {width:100%; max-width:450px; border:0;}
+.helpIcon {width:100%; max-width:256px; border:0;}
+.footerUmichLogo {width:100%; max-width:130px; border:0;}
+.backtoTopLogo {width:100%; max-width:110px; border:0;}
+.uMichAppIcon {width:100%; max-width:175px; border:0;}
+.iphoneAppIcons {width:100%; max-width:250px; margin:15px; border:0;}
+.storeIcons {width:100%; max-width:250px; margin:0 15px 15px 15px; border:0;}
+
+.hiddenOnDesktop {display:none; visibility:hidden;}
+.hiddenOnMobile {display:inline; visibility:visible;}
+
+.backToTopIcon {position:fixed; bottom:20px; right:20px; z-index:101;}
+.backtoTopIcon:hover {text-decoration:none;}
+
+.view {text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto;}
+.view-content {width:74%; height:100%; background:#eff0f1; font-family:Helvetica, Arial, sans-serif; font-size:18px; display:inline-block; zoom:1; *display:inline; vertical-align:top; text-align:left; margin:0 auto; padding:50px 20px 0 20px;}
+
+.video-container {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
+.video-container iframe,
+.video-container object,
+.video-container embed {position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.navD {width:100%;}
+.navTM {display:none; visibility:hidden;}
+
+.nav {position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%; overflow:auto;}
+.nav-border {background:#00274c; border-bottom-width:1px; border-bottom-color:#ffffff; border-bottom-style:solid; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:10px 0; width:100%; height:60px;}
+.navTM {display:none; visibility:hidden;}
+.navUL {font-family:'Trebuchet MS', 'Verdana', 'Lucida Grande'; font-size:18px; margin:0; padding:0;}
+.navLi {float:right; list-style:none; margin:28px 50px 0 20px; padding:0;}
+.navLiHome {float:left; list-style:none; margin:30px 20px 0 20px; padding:0;}
+
+.pageBannerContainer {background:#00274c; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%; height:90px;}
+.pageBannerLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:44%; text-align:left; margin:0 auto; padding:10px 10px 20px 10px;}
+.pageBannerRight {display:inline-block; zoom:1; *display:inline; vertical-align:bottom; width:32%; height:40px; text-align:left; margin:0 auto; padding:36px 10px 20px 10px;}
+
+.pageBannerRight .search {text-align:right;}
+.pageBannerRight .search #searchform {float:right; margin:-14px 0 0 0; padding:0; width:200px; overflow:auto;}
+.pageBannerRight .search #searchform .hidden {position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;}
+.pageBannerRight .search #searchform form {float:right; margin:0; padding:0;}
+.pageBannerRight .search #searchform #textbox {float:left; width:170px; height:25px; margin:0; padding:0 0 0 5px; -webkit-appearance:none; -webkit-border-radius:0; border:0; line-height:25px; background:#ffffff; font-size:.8em; color:#555555;}
+.pageBannerRight .search #searchform #button {float:right; border:0; width:25px; height:25px; margin:0; padding:0; border:0; -webkit-appearance:none; -webkit-border-radius:0; border-radius:0; line-height:25px; background:#ffcb05; font-size:14px; font-family:Antonio,'Arial Narrow'; font-weight:normal; color:#00274c; text-transform:uppercase;}
+
+.menu-link, .panel {display:none;}
+
+.cycleNavbarContainer {background:#eff0f1; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%; height:auto; overflow:auto; z-index:100;}
+.cycleNavbarContainer .navbar {float:left; width:100%; position:relative; overflow:hidden; font-size:24px; font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:40px;}
+.cycleNavbarContainer .navbar ul {font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; font-size:24px; line-height:40px; clear:left; float:left; list-style:none; margin:0; padding:0; position:relative; left:50%; text-align:center;}
+.cycleNavbarContainer .navbar ul li {display:block; float:left; margin:0; padding:0; position:relative; right:50%;}
+.cycleNavbarContainer .navbar ul li.design a {color:#b73325;}
+.cycleNavbarContainer .navbar ul li.build a {color:#067eb3;}
+.cycleNavbarContainer .navbar ul li.test a {color:#474775;}
+.cycleNavbarContainer .navbar ul li.release a {color:#308179;}
+.cycleNavbarContainer .navbar ul li.maintain a {color:#696264;}
+.cycleNavbarContainer .navbar ul li a {display:block; margin:0; padding:.5em 1em; color:#ffffff; text-decoration:none;}
+.cycleNavbarContainer .navbar ul li a:hover, .cycleNavbarContainer .navbar ul li a:focus, .cycleNavbarContainer .navbar ul li a:active {background:#eff0f1; color:#333333;}
+.cycleNavbarContainer .navbar ul li.design a:hover, .cycleNavbarContainer .navbar ul li.design a:focus, .cycleNavbarContainer .navbar ul li.design a:active {background:#b73325; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.build a:hover, .cycleNavbarContainer .navbar ul li.build a:focus, .cycleNavbarContainer .navbar ul li.build a:active {background:#067eb3; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.test a:hover, .cycleNavbarContainer .navbar ul li.test a:focus, .cycleNavbarContainer .navbar ul li.test a:active {background:#474775; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.release a:hover, .cycleNavbarContainer .navbar ul li.release a:focus, .cycleNavbarContainer .navbar ul li.release a:active {background:#308179; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.maintain a:hover, .cycleNavbarContainer .navbar ul li.maintain a:focus, .cycleNavbarContainer .navbar ul li.maintain a:active {background:#696264; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li a img {display:block;}
+
+.introContainer {background:#eff0f1; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:40px 0 20px 0; width:100%;}
+.introLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:68%; max-width:450px; text-align:left; margin:0 auto; padding:0 20px;}
+.introRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:32%; text-align:left; margin:0 auto; padding:20px;}
+
+.navbarContainer {background:#333333; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%; height:auto; min-height:2.5em; overflow:auto; z-index:100;}
+.navbarContainer .navbar {float:left; width:100%; position:relative; overflow:hidden; font-size:18px; font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:1.5em;}
+.navbarContainer .navbar ul {font-size:18px; font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:1.5em; clear:left; float:left; list-style:none; margin:0; padding:0; position:relative; left:50%; text-align:center;}
+.navbarContainer .navbar ul li {display:block; float:left; margin:0; padding:0; position:relative; right:50%;}
+.navbarContainer .navbar ul li a {display:block; margin:0; padding:.5em 1em; border-right:1px solid #555555; color:#ffffff; text-decoration:none;}
+.navbarContainer .navbar ul li a:hover, .navbarContainer .navbar ul li a:focus, .navbarContainer .navbar ul li a:active {background:#555555;}
+.navbarContainer .navbar ul li a .home-icon {font-family:FontAwesome; font-weight:normal; font-style:normal; color:#ffcb05; text-rendering:optimizelegibility; vertical-align:middle;}
+
+.fixed {}
+
+.navigationDeskTab {display:inline; visibility:visible;}
+.navigationMob {display:none; visibility:hidden;}
+
+.designContainer {background:#b73325; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:30px 0 0; width:100%;}
+.designLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:41%; text-align:left; margin:0 auto; padding:20px 20px 0 20px;}
+.designRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:30%; text-align:left; margin:0 auto; padding:0 40px 20px 0;}
+.designFull {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:74%; text-align:left; margin:0 auto; padding:20px 20px 0 20px;}
+
+.buildContainer {background:#067eb3; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:2em 0; width:100%;}
+.buildLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:30%; text-align:left; margin:0 auto; padding:0 20px;}
+.buildRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:48%; text-align:left; margin:0 auto; padding:20px 20px 0 20px;}
+
+.testContainer {background:#0f284b; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:2em 0 0 0; width:100%;}
+.testLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:38%; text-align:left; margin:0 auto; padding:20px 20px 0 20px;}
+.testRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:30%; text-align:left; margin:0 auto; padding:0 40px 20px 0;}
+
+.releaseContainer {background:#308179; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:2em 0; width:100%;}
+.releaseLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:30%; text-align:left; margin:0 auto; padding:0 20px;}
+.releaseRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:48%; text-align:left; margin:0 auto; padding:20px 20px 0 20px;}
+
+.maintainContainer {background:#696264; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:2em 0; width:100%;}
+.maintainLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:38%; text-align:left; margin:0 auto; padding:20px 20px 0 20px;}
+.maintainRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:30%; text-align:left; margin:0 auto; padding:0 40px 20px 0;}
+
+.developerHelpContainer {background:#0170B5; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:50px 0; width:100%;}
+.developerLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:36%; text-align:left; margin:0 auto; padding:0 20px;}
+.developerRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:20%; text-align:left; margin:0 auto; padding:0 40px;}
+
+.pageBottomFooter {clear:both; text-align:center; background:#00274c; border-bottom-width:1px; border-bottom-color:#ffffff; border-bottom-style:solid; position:relative; visibility:visible; bottom:0; right:0; left:0; margin:0 auto; padding:0; width:100%;}
+.pageBottomFooterContainer {margin:0 15px;}
+
+/*added by schleif*/
+.view-header {width: 74%;
+height: 100%;
+background: #eff0f1;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 18px;
+display: inline-block;
+zoom: 1;
+vertical-align: top;
+text-align: left;
+margin: 0 auto;
+margin-top:180px !important;
+padding: 50px 20px 0 20px;}
+
+.node-type-news-event h1.title {visibility:visible;display: inline-block;
+margin-top:180px !important;
+height: 100%;
+zoom: 1;
+vertical-align: top;
+text-align: left;
+margin: 0 auto;
+padding:20px 0 0 13%; background:#fff; text-align:left;width:87%;
+}
+
+/* end schleif additions */
+
+@media all and (min-width: 611px) and (max-width: 960px) {
+
+/*added by schleif*/
+.view-header {width: 90%;}
+/*end schleif additions*/
+
+.storeIcons {width:100%; max-width:200px; margin:0 15px 15px 15px; border:0;}
+
+.hiddenOnDesktop {display:inline-block; visibility:visible; text-align:center; width:100%; margin:20px auto;}
+.hiddenOnMobile {display:none; visibility:hidden;}
+
+.view {text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto;}
+.view-content {width:90%; height:100%; background:#eff0f1; font-family:Helvetica, Arial, sans-serif; font-size:18px; display:inline-block; zoom:1; *display:inline; vertical-align:top; text-align:left; margin:0 auto; padding:50px 0 0 0;}
+
+.pageBannerLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:53%; height:40px; text-align:left; margin:0 auto; padding:10px 20px 20px 0;}
+.pageBannerRight {display:inline-block; zoom:1; *display:inline; vertical-align:bottom; width:30%; height:40px; text-align:left; margin:0 auto; padding:46px 0 20px 20px;}
+  
+.introContainer {background:#eff0f1; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:40px 0 20px 0; width:100%;}
+.introLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:50%; text-align:left; margin:0 auto; padding:0 10px 10px 10px;}
+.introRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:40%; text-align:left; margin:0 auto; padding:10px;}
+
+.cycleNavbarContainer {background:#eff0f1; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%; height:auto; overflow:auto; z-index:100;}
+.cycleNavbarContainer .navbar {float:left; width:100%; position:relative; overflow:hidden; font-size:24px; font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal; line-height:40px;}
+.cycleNavbarContainer .navbar ul {clear:left; float:left; list-style:none; margin:0; padding:0; position:relative; left:50%; text-align:center;}
+.cycleNavbarContainer .navbar ul li {display:block; float:left; margin:0; padding:0; position:relative; right:50%;}
+.cycleNavbarContainer .navbar ul li.design a {color:#b73325;}
+.cycleNavbarContainer .navbar ul li.build a {color:#067eb3;}
+.cycleNavbarContainer .navbar ul li.test a {color:#474775;}
+.cycleNavbarContainer .navbar ul li.release a {color:#308179;}
+.cycleNavbarContainer .navbar ul li.maintain a {color:#696264;}
+.cycleNavbarContainer .navbar ul li a {display:block; margin:0; padding:.5em; color:#ffffff; text-decoration:none;}
+.cycleNavbarContainer .navbar ul li a:hover, .cycleNavbarContainer .navbar ul li a:focus, .cycleNavbarContainer .navbar ul li a:active {background:#eff0f1; color:#333333;}
+.cycleNavbarContainer .navbar ul li.design a:hover, .cycleNavbarContainer .navbar ul li.design a:focus, .cycleNavbarContainer .navbar ul li.design a:active {background:#b73325; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.build a:hover, .cycleNavbarContainer .navbar ul li.build a:focus, .cycleNavbarContainer .navbar ul li.build a:active {background:#067eb3; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.test a:hover, .cycleNavbarContainer .navbar ul li.test a:focus, .cycleNavbarContainer .navbar ul li.test a:active {background:#474775; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.release a:hover, .cycleNavbarContainer .navbar ul li.release a:focus, .cycleNavbarContainer .navbar ul li.release a:active {background:#308179; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li.maintain a:hover, .cycleNavbarContainer .navbar ul li.maintain a:focus, .cycleNavbarContainer .navbar ul li.maintain a:active {background:#696264; color:#ffffff;}
+.cycleNavbarContainer .navbar ul li a img {display:block;}
+
+.navbarContainer {background:#333333; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%; overflow:auto; z-index:100;}
+.navbarContainer .navbar {float:left; width:100%; position:relative; overflow:hidden; font-size:18px; font-family:Antonio, 'Arial Narrow', Arial; font-weight:normal;}
+.navbarContainer .navbar ul {clear:left; float:left; list-style:none; margin:0; padding:0; position:relative; left:50%; text-align:center;}
+.navbarContainer .navbar ul li {display:block; float:left; margin:0; padding:0; position:relative; right:50%;}
+.navbarContainer .navbar ul li a {display:block; margin:0; padding:.5em; border-right:1px solid #555555; color:#ffffff; text-decoration:none;}
+.navbarContainer .navbar ul li a:hover, .navbarContainer .navbar ul li a:focus, .navbarContainer .navbar ul li a:active {background:#555555;}
+.navbarContainer .navbar ul li a .home-icon {font-family:FontAwesome; font-weight:normal; font-style:normal; color:#ffcb05; text-rendering:optimizelegibility; vertical-align:middle;}
+
+.fixed {}
+
+.navigationDeskTab {display:inline; visibility:visible;}
+.navigationMob {display:none; visibility:hidden;}
+
+.designContainer {background:#b73325; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:30px 0 0; width:100%;}
+.designLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+.designRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:45%; text-align:center; margin:0 auto; padding:0 0 20px 0;}
+.designFull {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+
+.buildContainer {background:#067eb3; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:2em 0; width:100%;}
+.buildLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:45%; text-align:left; margin:0 auto; padding:0;}
+.buildRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:10px 0 0 0;}
+
+.testContainer {background:#0f284b; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:1em 0 0 0; width:100%;}
+.testLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+.testRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:45%; text-align:center; margin:0 auto; padding:0 0 20px 0;}
+
+.releaseContainer {background:#308179; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:1em 0; width:100%;}
+.releaseLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:45%; text-align:left; margin:0 auto; padding:15px 0 0 0;}
+.releaseRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:10px 0 0 0;}
+
+.maintainContainer {background:#696264; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:1em 0; width:100%;}
+.maintainLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+.maintainRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:45%; text-align:center; margin:0 auto; padding:0 0 20px 0;}
+
+.pageBottomFooter {clear:both; text-align:center; background:#00274c; border-bottom-width:1px; border-bottom-color:#ffffff; border-bottom-style:solid; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%;}
+.pageBottomFooterContainer {margin:0 15px;}
+
+}
+
+
+
+@media all and (min-width: 1px) and (max-width: 610px) {
+/*added by schleif*/
+.view-header {width: 90%;}
+.node-type-news-event h1.title {margin-top:176px !important;}
+/*end schleif additions*/
+.mobileAppsBanner {width:100%; max-width:310px; border:0;}
+
+.storeIcons {width:100%; max-width:200px; margin:0 15px 15px 15px; border:0;}
+
+.backtoTopLogo {width:100%; max-width:75px; border:0;}
+.backToTopIcon {position:fixed; bottom:10px; right:10px; z-index:101;}
+
+.hiddenOnDesktop {display:inline-block; visibility:visible; text-align:center; width:100%; margin:20px auto;}
+.hiddenOnMobile {display:none; visibility:hidden;}
+
+.view {text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto;}
+.view-content {width:90%; height:100%; background:#eff0f1; font-family:Helvetica, Arial, sans-serif; font-size:18px; display:inline-block; zoom:1; *display:inline; vertical-align:top; text-align:left; margin:0 auto; padding:50px 0 0 0;}
+
+.introContainer {background:#eff0f1; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:30px 0 20px 0; width:100%;}
+.introLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; max-width:400px; text-align:left; margin:0 auto; padding:0;}
+.introRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:30px auto 0 auto; padding:0;}
+
+
+.pageBannerContainer {background:#00274c; text-align:left; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:0; width:100%; height:120px;}
+.pageBannerLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:auto; text-align:left; margin:0 auto; padding:10px 20px 0px 20px;}
+.pageBannerRight {display:inline-block; zoom:1; *display:inline; vertical-align:bottom; width:auto; min-width:200px; text-align:left; margin:0 auto; padding:10px 20px 10px 20px;}
+
+.pageBannerRight .search {}
+.pageBannerRight .search #searchform {margin:-10px 0 0 0; padding:0; width:200px; overflow:auto;}
+.pageBannerRight .search #searchform .hidden {position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;}
+.pageBannerRight .search #searchform form {float:right; margin:0; padding:0;}
+.pageBannerRight .search #searchform #textbox {float:left; width:170px; height:25px; margin:0; padding:0 0 0 5px; -webkit-appearance:none; -webkit-border-radius:0; border:0; line-height:25px; background:#ffffff; font-size:.8em; color:#555555;}
+.pageBannerRight .search #searchform #button {
+	float:right;
+	border:0;
+	width:25px;
+	height:25px;
+	margin:0;
+	padding:0;
+	border:0;
+	-webkit-appearance:none;
+	-webkit-border-radius:0;
+	border-radius:0;
+	line-height:25px;
+	background:#ffcb05;
+	font-size:14px;
+	font-family:Antonio,'Arial Narrow';
+	font-weight:normal;
+	color:#00274c;
+	text-transform:uppercase;
+}
+
+.cycleNavbarContainer  { display:none; }
+
+.wrap {
+	position:relative;
+	background:#ffffff;
+	margin:0;
+	padding:0;
+}
+.menu-link {
+	display:block;
+	padding:.5em 1em;
+	background:#333333;
+	font-size:20px;
+	font-family:Antonio,'Arial Narrow',Arial,Helvetica,sans-serif;
+	color:#ffffff;
+	line-height:40px;
+	text-decoration:none;
+}
+.panel {
+	display:block;
+	position:fixed;
+	left: -200px; /*left or right and the width of your navigation panel*/
+	width: 200px; /*should match the above value*/
+	background:#eff0f1;
+}
+
+#menu {
+	
+}
+#menu ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#menu ul li {
+margin:5px 0;
+}
+#menu ul li a {
+	display:block;
+	margin:0;
+	padding:.25em 1em;
+	font-size:24px;
+	font-family:Antonio,Arial,Helvetica,sans-serif;
+	color:#555555;
+	line-height:auto;
+	text-decoration:none;
+	text-align:center;
+}
+#menu ul li.start a {
+	padding:.5em;
+	text-align:center;
+}
+#menu ul li.start a img {
+	width:100px;
+	height:100px;
+}
+#menu ul li.design a {
+	background:#eff0f1;
+	color:#b73325;
+}
+#menu ul li.build a {
+	background:#eff0f1;
+	color:#067eb3;
+}
+#menu ul li.test a {
+	background:#eff0f1;
+	color:#474775;
+}
+#menu ul li.release a {
+	background:#eff0f1;
+	color:#308179;
+}
+#menu ul li.maintain a {
+	background:#eff0f1;
+	color:#696264;
+}
+#menu ul li.additional a {
+	background:#eff0f1;
+	color:#000000;
+}
+
+.navbarContainer {
+	background:#333333;
+	text-align:center;
+	position:relative;
+	visibility:visible;
+	top:0;
+	right:0;
+	left:0;
+	margin:0 auto;
+	padding:0;
+	width:100%;
+	overflow:auto;
+	z-index:100;
+}
+.navbarContainer .navbar {
+	font-size:18px;
+	font-family:Antonio, 'Arial Narrow', Arial;
+	font-weight:normal;
+}
+.navbarContainer .navbar ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.navbarContainer .navbar ul li {
+	display:block;
+	margin:0;
+	padding:0;
+}
+.navbarContainer .navbar ul li a {
+	display:block;
+	margin:0;
+/*	padding:.5em 1em;*/
+	padding:0 1em;
+	color:#ffffff;
+	text-decoration:none;
+	line-height:45px;
+}
+.navbarContainer .navbar ul li a:hover, .navbarContainer .navbar ul li a:focus, .navbarContainer .navbar ul li a:active {
+	background:#555555;
+}
+.navbarContainer .navbar ul li a .home-icon {
+	font-family:FontAwesome;
+	font-weight:normal;
+	font-style:normal;
+	color:#ffcb05;
+	text-rendering:optimizelegibility;
+	vertical-align:middle;
+}
+
+.fixed {
+}
+
+.navigationMob {display:inline; visibility:visible;}
+.navigationDeskTab {display:none; visibility:hidden;}
+.mobileSubMenus {width:100%; background:#333333; margin:0; padding:10px 0; text-align:center; border-bottom-width:1px; border-bottom-color:#868787; border-bottom-style:solid;}
+
+.designContainer {background:#b73325; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:30px 0 0; width:100%;}
+.designLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+.designRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; max-width:280px; text-align:center; margin:0 auto; padding:0 0 20px 0;}
+.designFull {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+
+.buildContainer {background:#067eb3; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:1em 0; width:100%;min-height:500px;}
+.buildLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; max-width:280px; /*margin:0 auto; padding:15px 0 0 0;*/position: absolute;
+top: 48%;margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+}
+.buildRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:10px 0 0 0;position: absolute;
+left:0;
+margin-left: 12%;}
+
+.testContainer {background:#0f284b; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:1em 0 0 0; width:100%;}
+.testLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+.testRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; max-width:280px; text-align:center; margin:0 auto; padding:0 0 20px 0;}
+
+.releaseContainer {background:#308179; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:1em 0; width:100%;min-height:500px;}
+.releaseLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; max-width:280px; text-align:left; /*margin:0 auto; padding:15px 0 0 0;*/position: absolute;
+top: 48%;margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;}
+.releaseRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:10px 0 0 0;}
+
+.maintainContainer {background:#696264; text-align:center; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:1em 0; width:100%;}
+.maintainLeft {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; text-align:left; margin:0 auto; padding:20px 0 0 0;}
+.maintainRight {display:inline-block; zoom:1; *display:inline; vertical-align:top; width:90%; max-width:280px; text-align:center; margin:0 auto; padding:0 0 20px 0;}
+
+.pageBottomFooter {clear:both; text-align:center; background:#00274c; border-bottom-width:1px; border-bottom-color:#ffffff; border-bottom-style:solid; position:relative; visibility:visible; top:0; right:0; left:0; margin:0 auto; padding:25px 0; width:100%;}
+.pageBottomFooterContainer {margin:0 15px;}
+
+}
+
+
+.node-news-event {margin-top:0px !important;
+height: 100%;
+background: #eff0f1;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 18px;
+display: inline-block;
+zoom: 1;
+vertical-align: top;
+margin: 0 auto;
+padding: 00px 20px 0 20px;background-color:#FCFCFC; padding: 1em 0px 2em 0; width: 100%; text-align:center;}
+.node-news-event > .field {width: 74%;text-align:left;margin: 0 auto;font-family: Calibri, 'Gill Sans', Arial, Verdana, sans-serif;
+font-size: 18px;
+line-height: 20px;
+color: #333333;}
+.news-wrapper {font-family: Antonio, 'Arial Narrow', Arial;
+font-weight: normal;
+font-size: 41px;
+line-height: 43px;
+margin: 0;
+color: #333333;}
+/*block @ bottom of news and events - probably will need to be adjusted on go-live*/
+#block-block-22 {text-align:center;background-color:#FCFCFC;}
+#block-block-22 > p {margin:0 !important;padding:10px 10px 20px 10px;}
+.view {z-index: 100;}
+.views-row {padding-bottom:50px;}

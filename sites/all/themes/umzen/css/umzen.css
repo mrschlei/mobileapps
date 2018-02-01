@@ -1,0 +1,25 @@
+/* CSS Document */
+
+/*change body color*/
+	body {background-color:#0d4173;}
+
+/*remove margin from nav div and change bg for devtoolkit*/
+	#navigation {margin-bottom:0px;background: #369 url("../images/for-developers-menu-bg-dtk.png") repeat-x;}
+	
+/*change far-right link for devtoolkit nav*/
+#developers {
+	background: transparent url("../images/menu-bg.png") right top no-repeat;
+}
+
+#developers a:hover {
+	  background:#369 url("../images/menu-hover.png") repeat-x;
+}
+
+#navigation ul li:hover {
+  background:#369 url("../images/for-developers-menu-hover.png") repeat-x;
+}
+
+/*remove header and fix top margin*/
+#navwrap {background-image:none;height:45px !important;margin-bottom:0;}
+
+#content {margin-top:45px !important;}

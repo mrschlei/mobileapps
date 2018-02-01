@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="location_handler_filter_location_province.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_sort_location_distance.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_filter_location_country.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_sort_location_country.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_views_handler_filter_proximity.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_field_location_distance.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_field_location_additional.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_argument_location_province.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_field_location_country.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_argument_location_country.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_field_location_street.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_views_handler_field_coordinates.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_field_location_province.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_views_handler_field_longitude.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_field_location_address.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_views_handler_field_latitude.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+<file name="location_handler_argument_location_proximity.inc" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130831726110000000" remote="130831726110000000" Dst="1" />
+</dwsync>

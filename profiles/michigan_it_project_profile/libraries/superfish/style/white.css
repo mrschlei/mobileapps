@@ -1,0 +1,115 @@
+.sf-menu.sf-style-white {
+	margin:0;
+	padding:0;
+}
+.sf-menu.sf-style-white.sf-navbar {
+}
+.sf-menu.sf-style-white ul {
+}
+.sf-menu.sf-style-white li {
+	margin:0;
+	padding:0 1px 0 0;
+	background:#ffffff url('/sites/all/themes/zen_services/images/menu-vertical.png') right top no-repeat;
+}
+.sf-menu.sf-style-white a {
+	margin:0;
+	padding:10px;
+	text-decoration:none;
+	line-height:20px;
+	color:#333333;
+}
+.sf-menu.sf-style-white a.sf-with-ul {
+}
+.sf-menu.sf-style-white.rtl a.sf-with-ul {
+}
+.sf-menu.sf-style-white.sf-navbar a {
+}
+.sf-menu.sf-style-white span.sf-description {
+}
+.sf-menu.sf-style-white li li {
+	margin:0;
+	padding:0;
+	border:0;
+	background:#ebebeb;
+	background-image:none;
+}
+.sf-menu.sf-style-white li li li {
+}
+.sf-menu.sf-style-white li:hover,
+.sf-menu.sf-style-white li.sfHover,
+.sf-menu.sf-style-white li.active a,
+.sf-menu.sf-style-white a:focus,
+.sf-menu.sf-style-white a:hover,
+.sf-menu.sf-style-white a:active,
+.sf-menu.sf-style-white.sf-navbar li li {
+	color:#333333;
+}
+.sf-depth-1 {
+}
+.sf-depth-2 a:hover {
+}
+.sf-menu.sf-style-white.sf-navbar li ul {
+}
+.sf-menu.sf-style-white.sf-navbar li ul li ul {
+}
+.sf-menu.sf-style-white .sf-sub-indicator {
+}
+.sf-menu.sf-style-white.rtl .sf-sub-indicator {
+}
+
+/* new styles added by mrschlei 4/25/12 */
+.sf-depth-2 {
+}
+.sf-sub-indicator {
+}
+.sf-menu li {
+}
+.sf-depth-1 {
+}
+/* decreases the gap between the parent menu item and then drop-down UL */
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	margin:0;
+	background:#ebebeb url('/sites/all/themes/zen_services/images/menu-vertical.png') right top no-repeat;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	top:100%;
+	background:#ebebeb;
+}
+
+/*all blocks get some bottom padding... except for one renegade block. SUPERFIIIIIIIIIISH!!!!!*/
+.block.block-superfish {
+	margin-bottom:0 !important; /* DO NOT REMOVE */
+}
+li.sf-depth-1 ul {
+	margin:0;
+	padding:0;
+}
+li.sf-depth-1 ul li {
+	margin:0 !important;
+/*	border-bottom:1px solid #cccccc;*/
+}
+li.sf-depth-1 ul li {
+	margin:0 !important;
+	padding:0 !important;
+}
+li.sf-depth-1 ul li a {
+/*	padding-top:5px !important;*/
+/*	padding-bottom:5px !important;*/
+	display:block;
+	margin:0 !important;
+	padding:2px 10px 2px 10px !important;
+}
+li.sf-depth-1 ul li:hover,
+li.sf-depth-1 ul li a:hover {
+	background:#cccccc;
+}
+a:visited.sf-depth-1 {
+}
+li.sf-depth-1 a {
+}
+li.sf-depth-1 ul li.last a {
+}
+li.sf-depth-1 ul li.last a:hover {
+}

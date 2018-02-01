@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CommandHandlerBase.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="CopyFiles.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="CreateFolder.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="DeleteFile.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="DeleteFolder.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="DownloadFile.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="FileUpload.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="GetFiles.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="GetFolders.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="Init.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="LoadCookies.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="MoveFiles.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="QuickUpload.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="RenameFile.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="RenameFolder.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="Thumbnail.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+<file name="XmlCommandHandlerBase.php" server="sftp.itd.umich.edu//afs/umich.edu/group/i/itsmobap/Public/html/drupal/" local="130793950430000000" remote="130793950430000000" Dst="1" />
+</dwsync>
