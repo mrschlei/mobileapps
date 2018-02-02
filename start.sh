@@ -27,9 +27,9 @@ a2enmod include
 a2ensite default-ssl 
 
 mkdir /var/www/html/sites/documentation.its.openshift.dsc.umich.edu
+mkdir /var/www/html/sites/it.openshift.dsc.umich.edu
 mkdir /var/www/html/sites/it.openshift.dsc.umich.edu.initiatives.cloud
 mkdir /var/www/html/sites/it.openshift.dsc.umich.edu.projects.sitemaker
-mkdir /var/www/html/sites/it.openshift.dsc.umich.edu
 mkdir /var/www/html/sites/its-announce.openshift.dsc.umich.edu
 mkdir /var/www/html/sites/its-content.openshift.dsc.umich.edu
 mkdir /var/www/html/sites/itservices-drupal-dev.it.openshift.dsc.umich.edu
