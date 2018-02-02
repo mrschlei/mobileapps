@@ -1,7 +1,0 @@
-http://it.umich.edu/initiatives/cloud/
-http://it.umich.edu/initiatives/cloud/content/start-using-it
-http://it.umich.edu/initiatives/cloud/content/library-u-m-cloud-services
-http://it.umich.edu/initiatives/cloud/content/cloud-defined
-http://it.umich.edu/initiatives/cloud/content/what-cloud
-http://it.umich.edu/initiatives/cloud/content/why-cloud-services
-http://it.umich.edu/initiatives/cloud/content/traditional-it-vs-cloud-services
