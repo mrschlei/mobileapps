@@ -18,7 +18,12 @@ ln -sf /secrets/ssl/AddTrustExternalCARoot.pem /etc/ssl/certs/AddTrustExternalCA
 ln -sf /secrets/ssl/sha384-Intermediate-cert.pem /etc/ssl/certs/sha384-Intermediate-cert.pem
 
 # If it exists, include local.start.sh
-[ -f /secrets/start/local.start.sh ] && /secrets/start/local.start.sh
+#[ -f /secrets/start/local.start.sh ] && /secrets/start/local.start.sh
+
+if [ -f /secrets/start/local.start.sh ] 
+then 
+  /bin/sh /secrets/start/local.start.sh
+fi
 
 # These lines would need to be in a site-specific local.start.sh
 ##### begin local.start.sh
