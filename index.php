@@ -14,9 +14,6 @@
 /**
  * Root directory of Drupal installation.
  */
-echo "test!!!";
-error_reporting(-1);
-ini_set('display_errors', 'On');
 define('DRUPAL_ROOT', getcwd());
 
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
