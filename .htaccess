@@ -71,9 +71,6 @@ RewriteCond %{HTTP_HOST} !^services.it
 RewriteCond %{REQUEST_URI} ^/my-it-services
 RewriteRule ^(.*)$ http://umichprod.service-now.com/my-it-services [R=301,NC,L]
 
-RewriteCond %{HTTPS}  !=on 
-RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L] 
-
 # Block access to "hidden" directories whose names begin with a period. This
 # includes directories used by version control systems such as Subversion or
 # Git to store control files. Files whose names begin with a period, as well
