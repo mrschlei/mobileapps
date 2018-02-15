@@ -132,9 +132,8 @@ RewriteRule ^ index.php [L]
   RewriteCond %{REQUEST_FILENAME}\.gz -s
   RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
 
-
-  RewriteCond %{REQUEST_URI} !cosign/valid
-  RewriteRule ^ index.php [L]
+#  RewriteCond %{REQUEST_URI} !cosign/valid
+#  RewriteRule ^ index.php [L]
 
   # Serve gzip compressed JS files if they exist and the client accepts gzip.
   RewriteCond %{HTTP:Accept-encoding} gzip
