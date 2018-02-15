@@ -5,7 +5,8 @@ FROM drupal:7.56-apache
 #### Cosign Pre-requisites ###
 WORKDIR /usr/lib/apache2/modules
 
-ENV COSIGN_URL https://github.com/umich-iam/cosign/archive/cosign-3.4.0.tar.gz
+#ENV COSIGN_URL https://github.com/umich-iam/cosign/archive/cosign-3.4.0.tar.gz
+ENV COSIGN_URL https://github.com/umich-iam/cosign/archive/cosign-3.2.0.tar.gz
 ENV CPPFLAGS="-I/usr/kerberos/include"
 ENV OPENSSL_VERSION 1.0.1t-1+deb8u7
 ENV APACHE2=/usr/sbin/apache2
