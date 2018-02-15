@@ -5,7 +5,6 @@ FROM drupal:7.56-apache
 #### Cosign Pre-requisites ###
 WORKDIR /usr/lib/apache2/modules
 
-#ENV COSIGN_URL https://github.com/umich-iam/cosign/archive/cosign-3.4.0.tar.gz
 ENV COSIGN_URL https://github.com/umich-iam/cosign/archive/cosign-3.2.0.tar.gz
 ENV CPPFLAGS="-I/usr/kerberos/include"
 ENV OPENSSL_VERSION 1.0.1t-1+deb8u7
@@ -19,8 +18,8 @@ RUN apt-get update \
 ### Build Cosign ###
 RUN wget "$COSIGN_URL" \
 	&& mkdir -p src/cosign \
-	&& tar -xvf cosign-3.4.0.tar.gz -C src/cosign --strip-components=1 \
-	&& rm cosign-3.4.0.tar.gz \
+	&& tar -xvf cosign-3.2.0.tar.gz -C src/cosign --strip-components=1 \
+	&& rm cosign-3.2.0.tar.gz \
 	&& cd src/cosign \
 	&& autoconf \
 	&& ./configure --enable-apache2=/usr/bin/apxs \
